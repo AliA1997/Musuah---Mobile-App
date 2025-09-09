@@ -1,0 +1,78 @@
+{
+    "collaborate": "Colaborar",
+    "registerToCollaborate": "¡Regístrate para colaborar con nosotros! 😊",
+    "pleaseCheckYourEmailAt": "Por favor revisa tu correo electrónico en ",
+    "forAVerificationEmail": " para un correo de verificación.",
+    "sectionTitles": {
+        "personalInfo": "Información Personal",
+        "fieldOfFocus": "Área de Enfoque",
+        "otherInfo": "Otra Información"
+    },
+    "wouldLikeToBeContributor": "¿Te gustaría ser colaborador?",
+    "joinUs": "Únete a nosotros",
+    "inputLabels": {
+        "email": "Correo Electrónico",
+        "password": "Contraseña",
+        "profilePicture": "Sube tu foto de perfil",
+        "firstName": "Nombre",
+        "familyName": "Apellido",
+        "countryOfOrigin": "País de Origen",
+        "nationalId": "Identificación Nacional",
+        "nationalIdPicture": "Sube tu identificación nacional",
+        "fieldOfFocus": "Área de Enfoque",
+        "wasInGovernmentAgency": "¿Has sido parte de una agencia gubernamental?",
+        "infoIsCorrect": "¿Juras que tu información es correcta?",
+        "whyContribute": "¿Por qué te gustaría contribuir a mūsūʿah?",
+        "agreeToTerms": "¿Aceptas los términos y condiciones?",
+        "amountToDonate": "Monto a donar en USD",
+        "paymentNote": "Nota de pago"
+    },
+    "inputPlaceholders": {
+        "email": "Tu correo electrónico",
+        "password": "Tu contraseña",
+        "confirmPassword": "Confirmar contraseña",
+        "firstName": "Tu nombre y otros nombres",
+        "familyName": "Apellido o nombre de familia",
+        "nationalId": "Tu identificación para tu país de residencia",
+        "whyContribute": "¿Por qué quieres contribuir a mūsūʿah? Solo tenemos curiosidad.",
+        "amountToDonate": "Monto del pago",
+        "paymentNote": "Tu nota de pago"
+    },
+    "passwordRequirements": {
+        "line1": " caracteres como mínimo",
+        "line2": "Al menos una letra mayúscula",
+        "line3": "Al menos una letra minúscula",
+        "line4": "Al menos un número",
+        "line5": "Al menos un carácter especial",
+        "passwordsMatch": "✓ Las contraseñas coinciden",
+        "passwordsDoNotMatch": "✗ Las contraseñas no coinciden",
+        "hidePasswords": "Ocultar contraseñas",
+        "showPasswords": "Mostrar contraseñas"
+    },
+    "sectionSubtitles": {
+        "loginInfo": "Información de Inicio de Sesión",
+        "login": "Iniciar Sesión"
+    },
+    "buttons": {
+        "save": "Guardar",
+        "edit": "Editar",
+        "cancel": "Cancelar",
+        "requestToDelete": "Solicitar Eliminación",
+        "back": "Atrás",
+        "review": "Revisar",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "yesIConfirm": "Sí, Confirmo",
+        "normalView": "Vista Normal",
+        "councilMemberView": "Vista de Miembro del Consejo"
+    },
+    "confirmation": {
+        "deleteTitle": "Estás a punto de enviar este título ",
+        "forDeletion": " para su eliminación",
+        "reasonLabel": "Razón para tomar esta decisión.",
+        "reasonPlaceholder": "Motivo para tomar esta decisión"
+    },
+    "wikipages": {
+        "summary": "Resumen"
+    }
+}

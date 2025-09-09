@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
-
-import { TabBarIcon } from '~/components/TabBarIcon';
+import { Ionicons } from '@expo/vector-icons';
+import ChatbotIcon from '~/components/icons/ChatbotIcon';
+import EBooksIcon from '~/components/icons/EBooksIcon';
 
 export default function TabLayout() {
   return (
@@ -10,17 +11,24 @@ export default function TabLayout() {
         tabBarActiveTintColor: 'black',
       }}>
       <Tabs.Screen
-        name="index"
+        name="SearchPages"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Search Pages',
+          tabBarIcon: ({ color }) => <Ionicons name="search-circle" size={25} color={color} />
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="SearchBooks"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Books And Studies',
+          tabBarIcon: ({ color }) => <EBooksIcon width={30} height={30} />,
+        }}
+      />
+      <Tabs.Screen
+        name="AIChat"
+        options={{
+          title: 'Use AI',
+          tabBarIcon: ({ color }) => <ChatbotIcon width={30} height={30} />,
         }}
       />
     </Tabs>

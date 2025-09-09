@@ -14,9 +14,10 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ThemeToggle } from '~/components/ThemeToggle';
 import { useColorScheme, useInitialAndroidBarSync } from '~/lib/useColorScheme';
 import { NAV_THEME } from '~/theme';
+import i18n, { initI18n } from './i18n/index';
+import { useEffect } from 'react';
 
 export {
-  // Catch any errors thrown by the Layout component.
   ErrorBoundary,
 } from 'expo-router';
 
@@ -24,14 +25,17 @@ export default function RootLayout() {
   useInitialAndroidBarSync();
   const { colorScheme, isDarkColorScheme } = useColorScheme();
 
+  useEffect(() => {
+    initI18n();
+  }, []);
+
   return (
     <>
       <StatusBar
         key={`root-status-bar-${isDarkColorScheme ? 'light' : 'dark'}`}
         style={isDarkColorScheme ? 'light' : 'dark'}
       />
-      {/* WRAP YOUR APP WITH ANY ADDITIONAL PROVIDERS HERE */}
-      {/* <ExampleProvider> */}
+
 
       <GestureHandlerRootView style={{ flex: 1 }}>
         <BottomSheetModalProvider>
@@ -46,7 +50,6 @@ export default function RootLayout() {
         </BottomSheetModalProvider>
       </GestureHandlerRootView>
 
-      {/* </ExampleProvider> */}
     </>
   );
 }
@@ -56,7 +59,7 @@ const SCREEN_OPTIONS = {
 } as const;
 
 const DRAWER_OPTIONS = {
-  headerShown: false,
+  headerShown: false
 } as const;
 
 const MODAL_OPTIONS = {

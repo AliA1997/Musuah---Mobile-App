@@ -1,0 +1,78 @@
+{
+    "collaborate": "İşbirliği",
+    "registerToCollaborate": "Bizimle işbirliği yapmak için kaydolun! 😊",
+    "pleaseCheckYourEmailAt": "Lütfen e-postanızı kontrol edin ",
+    "forAVerificationEmail": " doğrulama e-postası için.",
+    "sectionTitles": {
+        "personalInfo": "Kişisel Bilgiler",
+        "fieldOfFocus": "Odak Alanı",
+        "otherInfo": "Diğer Bilgiler"
+    },
+    "wouldLikeToBeContributor": "Katkıda bulunmak ister misiniz?",
+    "joinUs": "Bize katılın",
+    "inputLabels": {
+        "email": "E-posta",
+        "password": "Şifre",
+        "profilePicture": "Profil resminizi yükleyin",
+        "firstName": "Ad",
+        "familyName": "Soyad",
+        "countryOfOrigin": "Doğum Ülkesi",
+        "nationalId": "Kimlik No",
+        "nationalIdPicture": "Kimlik yükleyin",
+        "fieldOfFocus": "Odak Alanı",
+        "wasInGovernmentAgency": "Daha önce bir devlet kurumunda bulundunuz mu?",
+        "infoIsCorrect": "Bilgileriniz doğru mu?",
+        "whyContribute": "Neden mūsūʿah’a katkıda bulunmak istiyorsunuz?",
+        "agreeToTerms": "Şartlar ve koşulları kabul ediyor musunuz?",
+        "amountToDonate": "Bağış Miktarı (USD)",
+        "paymentNote": "Ödeme Notu"
+    },
+    "inputPlaceholders": {
+        "email": "E-postanız",
+        "password": "Şifreniz",
+        "confirmPassword": "Şifreyi Onaylayın",
+        "firstName": "Adınız ve diğer isimler",
+        "familyName": "Soyadınız",
+        "nationalId": "İkamet ettiğiniz ülkenin kimlik numaranız",
+        "whyContribute": "Neden mūsūʿah’a katkıda bulunmak istiyorsunuz? Sadece merak ediyoruz.",
+        "amountToDonate": "Ödeme Miktarı",
+        "paymentNote": "Ödeme Notunuz"
+    },
+    "passwordRequirements": {
+        "line1": " karakter minimum",
+        "line2": "En az bir büyük harf",
+        "line3": "En az bir küçük harf",
+        "line4": "En az bir sayı",
+        "line5": "En az bir özel karakter",
+        "passwordsMatch": "✓ Şifreler eşleşiyor",
+        "passwordsDoNotMatch": "✗ Şifreler eşleşmiyor",
+        "hidePasswords": "Şifreleri Gizle",
+        "showPasswords": "Şifreleri Göster"
+    },
+    "sectionSubtitles": {
+        "loginInfo": "Giriş Bilgileri",
+        "login": "Giriş"
+    },
+    "buttons": {
+        "save": "Kaydet",
+        "edit": "Düzenle",
+        "cancel": "İptal",
+        "requestToDelete": "Silme Talebi",
+        "back": "Geri",
+        "review": "İncele",
+        "next": "Sonraki",
+        "submit": "Gönder",
+        "yesIConfirm": "Evet, Onaylıyorum",
+        "normalView": "Normal Görünüm",
+        "councilMemberView": "Meclis Üyesi Görünümü"
+    },
+    "confirmation": {
+        "deleteTitle": "Bu başlığı göndermek üzeresiniz ",
+        "forDeletion": " silinmesi için",
+        "reasonLabel": "Bu kararı alma nedeni.",
+        "reasonPlaceholder": "Bu kararı alma nedeni"
+    },
+    "wikipages": {
+        "summary": "Özet"
+    }
+}

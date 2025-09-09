@@ -1,0 +1,78 @@
+{
+    "collaborate": "合作",
+    "registerToCollaborate": "注册与我们合作！😊",
+    "pleaseCheckYourEmailAt": "请检查您的邮箱：",
+    "forAVerificationEmail": " 以获取验证邮件。",
+    "sectionTitles": {
+        "personalInfo": "个人信息",
+        "fieldOfFocus": "关注领域",
+        "otherInfo": "其他信息"
+    },
+    "wouldLikeToBeContributor": "想成为贡献者吗？",
+    "joinUs": "加入我们",
+    "inputLabels": {
+        "email": "电子邮箱",
+        "password": "密码",
+        "profilePicture": "上传您的个人照片",
+        "firstName": "名字",
+        "familyName": "姓氏",
+        "countryOfOrigin": "原籍国家",
+        "nationalId": "身份证号",
+        "nationalIdPicture": "上传您的身份证",
+        "fieldOfFocus": "关注领域",
+        "wasInGovernmentAgency": "您是否曾在政府机构工作过？",
+        "infoIsCorrect": "您是否保证您的信息正确？",
+        "whyContribute": "为什么您想为 mūsūʿah 做出贡献？",
+        "agreeToTerms": "您是否同意条款和条件？",
+        "amountToDonate": "捐款金额（美元）",
+        "paymentNote": "付款备注"
+    },
+    "inputPlaceholders": {
+        "email": "您的邮箱",
+        "password": "您的密码",
+        "confirmPassword": "确认密码",
+        "firstName": "您的名字和其他名字",
+        "familyName": "姓氏或姓",
+        "nationalId": "您所在国家的身份证号码",
+        "whyContribute": "您为什么想为 mūsūʿah 做贡献？我们只是好奇。",
+        "amountToDonate": "付款金额",
+        "paymentNote": "您的付款备注"
+    },
+    "passwordRequirements": {
+        "line1": " 最少字符数",
+        "line2": "至少一个大写字母",
+        "line3": "至少一个小写字母",
+        "line4": "至少一个数字",
+        "line5": "至少一个特殊字符",
+        "passwordsMatch": "✓ 密码匹配",
+        "passwordsDoNotMatch": "✗ 密码不匹配",
+        "hidePasswords": "隐藏密码",
+        "showPasswords": "显示密码"
+    },
+    "sectionSubtitles": {
+        "loginInfo": "登录信息",
+        "login": "登录"
+    },
+    "buttons": {
+        "save": "保存",
+        "edit": "编辑",
+        "cancel": "取消",
+        "requestToDelete": "请求删除",
+        "back": "返回",
+        "review": "审核",
+        "next": "下一步",
+        "submit": "提交",
+        "yesIConfirm": "是的，我确认",
+        "normalView": "普通视图",
+        "councilMemberView": "委员会成员视图"
+    },
+    "confirmation": {
+        "deleteTitle": "您即将提交此标题 ",
+        "forDeletion": " 以删除",
+        "reasonLabel": "做出此决定的理由。",
+        "reasonPlaceholder": "做出此决定的理由"
+    },
+    "wikipages": {
+        "summary": "摘要"
+    }
+}

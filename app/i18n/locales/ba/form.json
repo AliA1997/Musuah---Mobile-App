@@ -1,0 +1,78 @@
+{
+    "collaborate": "Saradnja",
+    "registerToCollaborate": "Registrujte se da sarađujete s nama! 😊",
+    "pleaseCheckYourEmailAt": "Molimo provjerite svoj email na ",
+    "forAVerificationEmail": " za verifikacijski email.",
+    "sectionTitles": {
+        "personalInfo": "Lični podaci",
+        "fieldOfFocus": "Oblast fokusa",
+        "otherInfo": "Ostale informacije"
+    },
+    "wouldLikeToBeContributor": "Želite li biti saradnik?",
+    "joinUs": "Pridružite nam se",
+    "inputLabels": {
+        "email": "Email",
+        "password": "Lozinka",
+        "profilePicture": "Otpremite svoju profilnu sliku",
+        "firstName": "Ime",
+        "familyName": "Prezime",
+        "countryOfOrigin": "Zemlja porijekla",
+        "nationalId": "Nacionalni ID",
+        "nationalIdPicture": "Otpremite svoj nacionalni ID",
+        "fieldOfFocus": "Oblast fokusa",
+        "wasInGovernmentAgency": "Da li ste bili dio državne agencije?",
+        "infoIsCorrect": "Da li se zaklinjete da su vaši podaci tačni?",
+        "whyContribute": "Zašto želite doprinijeti mūsūʿah?",
+        "agreeToTerms": "Da li se slažete s uslovima i odredbama?",
+        "amountToDonate": "Iznos donacije u USD",
+        "paymentNote": "Napomena o uplati"
+    },
+    "inputPlaceholders": {
+        "email": "Vaš email",
+        "password": "Vaša lozinka",
+        "confirmPassword": "Potvrdite lozinku",
+        "firstName": "Vaše ime i druga imena",
+        "familyName": "Prezime",
+        "nationalId": "Vaš ID u zemlji prebivališta",
+        "whyContribute": "Zašto želite doprinijeti mūsūʿah? Samo smo znatiželjni.",
+        "amountToDonate": "Iznos uplate",
+        "paymentNote": "Vaša napomena o uplati"
+    },
+    "passwordRequirements": {
+        "line1": " minimalno karaktera",
+        "line2": "Najmanje jedno veliko slovo",
+        "line3": "Najmanje jedno malo slovo",
+        "line4": "Najmanje jedan broj",
+        "line5": "Najmanje jedan specijalni znak",
+        "passwordsMatch": "✓ Lozinke se podudaraju",
+        "passwordsDoNotMatch": "✗ Lozinke se ne podudaraju",
+        "hidePasswords": "Sakrij lozinke",
+        "showPasswords": "Prikaži lozinke"
+    },
+    "sectionSubtitles": {
+        "loginInfo": "Prijavni podaci",
+        "login": "Prijava"
+    },
+    "buttons": {
+        "save": "Sačuvaj",
+        "edit": "Uredi",
+        "cancel": "Otkaži",
+        "requestToDelete": "Zahtjev za brisanje",
+        "back": "Nazad",
+        "review": "Pregled",
+        "next": "Sljedeće",
+        "submit": "Pošalji",
+        "yesIConfirm": "Da, potvrđujem",
+        "normalView": "Normalni prikaz",
+        "councilMemberView": "Prikaz člana vijeća"
+    },
+    "confirmation": {
+        "deleteTitle": "Spremate se poslati ovaj naslov ",
+        "forDeletion": " na brisanje",
+        "reasonLabel": "Razlog za ovu odluku.",
+        "reasonPlaceholder": "Razlog za ovu odluku"
+    },
+    "wikipages": {
+        "summary": "Sažetak"
+    }
+}
