@@ -42,48 +42,6 @@ const DrawerLayout = () => (
         ),
       }}
     />
-    <Drawer.Screen
-      name="English"
-      options={{
-        headerTitle: 'English',
-        drawerLabel: 'English',
-      }}
-    />
-    <Drawer.Screen
-      name="French"
-      options={{
-        headerTitle: 'French',
-        drawerLabel: 'French',
-      }}
-    />
-    <Drawer.Screen
-      name="German"
-      options={{
-        headerTitle: 'German',
-        drawerLabel: 'German',
-      }}
-    />
-    <Drawer.Screen
-      name="Arabic"
-      options={{
-        headerTitle: 'Arabic',
-        drawerLabel: 'Arabic',
-      }}
-    />
-    <Drawer.Screen
-      name="Chinese"
-      options={{
-        headerTitle: 'Chinese',
-        drawerLabel: 'Chinese',
-      }}
-    />
-    <Drawer.Screen
-      name="Spanish"
-      options={{
-        headerTitle: 'Spanish',
-        drawerLabel: 'Spanish',
-      }}
-    />
   </Drawer>
 );
 

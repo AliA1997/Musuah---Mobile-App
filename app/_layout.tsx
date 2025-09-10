@@ -14,20 +14,19 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ThemeToggle } from '~/components/ThemeToggle';
 import { useColorScheme, useInitialAndroidBarSync } from '~/lib/useColorScheme';
 import { NAV_THEME } from '~/theme';
-import i18n, { initI18n } from './i18n/index';
-import { useEffect } from 'react';
+import 'i18next';
+import i18n from './i18n';
+import { useEffect, useLayoutEffect } from 'react';
+import initializeResourceBundle from './i18n/initializeResourceBundle';
 
 export {
   ErrorBoundary,
 } from 'expo-router';
 
+initializeResourceBundle(i18n);
 export default function RootLayout() {
   useInitialAndroidBarSync();
   const { colorScheme, isDarkColorScheme } = useColorScheme();
-
-  useEffect(() => {
-    initI18n();
-  }, []);
 
   return (
     <>

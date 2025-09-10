@@ -1,15 +1,16 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import commonEn from './locales/en/common.json';
 
-export const initI18n = async () =>  
-  i18n
+i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: false,
+    debug: false, // Set to true for development
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false, // React Native already handles escaping
     },
+    resources: {} // Start with empty resources if loading dynamically
   });
 
 export default i18n;

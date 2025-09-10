@@ -84,17 +84,17 @@ const SearchAutocomplete = observer(
       [autocompleteType]
     );
 
-    // 🔹 Handle select
-    const onSelectItem = (item: QueriedAutocompleteOption) => {
-      setSelected(item);
-      setOpen(false);
-      const { language } = commonStore;
-      if (autocompleteType === AutocompleteType.SearchBooks) {
-        navigation.navigate("WikiBook", { lang: language, id: item.value });
-      } else {
-        alert('test')
-        navigation.navigate({ pathname: '/(drawer)/(tabs)/SearchPages/details/[pageid]', params: { lang: language, pageid: item.value } });
-      }
+    const onSelectItem = (item: any) => {
+      alert("JSONstringfigy: " + JSON.stringify(item))
+      // setSelected(item);
+      // setOpen(false);
+      // const { language } = commonStore;
+      // if (autocompleteType === AutocompleteType.SearchBooks) {
+      //   navigation.navigate("WikiBook", { lang: language, id: item.value });
+      // } else {
+      //   alert('test')
+      //   navigation.navigate({ pathname: '/(drawer)/(tabs)/SearchPages/details/[pageid]', params: { lang: language, pageid: item.value } });
+      // }
     };
 
     // Close dropdown when tapping outside
@@ -172,7 +172,7 @@ const SearchAutocomplete = observer(
                 renderItem={({ item }) => (
                   <TouchableOpacity
                     style={styles.dropdownItem}
-                    onPress={() => onSelectItem(item)}
+                    onPress={(e) => onSelectItem(item)}
                   >
                     <Text style={styles.dropdownText}>{item.text}</Text>
                     {autocompleteType === AutocompleteType.SearchBooks && item.primaryTopic && (
@@ -183,7 +183,7 @@ const SearchAutocomplete = observer(
                   </TouchableOpacity>
                 )}
                 style={styles.flatList}
-                keyboardShouldPersistTaps="handled"
+                keyboardShouldPersistTaps="always" 
               />
             ) : (
               <View style={styles.noResultsContainer}>
@@ -254,8 +254,10 @@ const styles = StyleSheet.create({
   },
   dropdownItem: {
     padding: 12,
+    zIndex: 999,
     borderBottomWidth: 1,
     borderBottomColor: "#f0f0f0",
+    backgroundColor: 'blue'
   },
   dropdownText: {
     fontSize: 16,
