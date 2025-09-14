@@ -16,6 +16,10 @@
     "booksAndStudiesPart1": "Bücher",
     "booksAndStudiesPart2": "Und Studien"
   },
+  "navigationLinks": {
+    "more": "Mehr",
+    "privacyPolicy": "Datenschutzerklärung"
+  },
   "links": {
     "es": "Spanisch",
     "en": "Englisch",

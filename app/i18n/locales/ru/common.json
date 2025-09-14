@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "Книги",
         "booksAndStudiesPart2": "И исследования"
     },
+    "navigationLinks": {
+        "more": "Ещё",
+        "privacyPolicy": "Политика конфиденциальности"
+    },
     "links": {
         "es": "Испанский",
         "en": "Английский",

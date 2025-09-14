@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "كتب",
         "booksAndStudiesPart2": "ودراسات"
     },
+    "navigationLinks": {
+        "more": "المزيد",
+        "privacyPolicy": "سياسة الخصوصية"
+    },
     "links": {
         "es": "الإسبانية",
         "en": "الإنجليزية",

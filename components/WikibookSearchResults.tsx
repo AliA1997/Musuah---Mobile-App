@@ -9,6 +9,7 @@ import {
   TextInput,
   ActivityIndicator,
   Platform,
+  FlatList,
 } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { useTranslation } from 'react-i18next';
@@ -19,22 +20,23 @@ import useLoadDataFromGetQueryParams from '../hooks/useLoadDataFromQueryParams';
 // Assuming we have a custom Autocomplete component for React Native
 import Autocomplete from './common/Autocomplete';
 import { AutocompleteType } from '../models/common';
+import { router } from 'expo-router';
 
 // Styled components to replace Chakra UI
-const StyledText = ({ 
-  children, 
-  fontSize = '100%', 
-  color = 'blue', 
-  onPress, 
-  style 
-}: { 
-  children: React.ReactNode; 
-  fontSize?: string; 
-  color?: string; 
-  onPress?: () => void; 
+const StyledText = ({
+  children,
+  fontSize = '100%',
+  color = 'blue',
+  onPress,
+  style
+}: {
+  children: React.ReactNode;
+  fontSize?: string;
+  color?: string;
+  onPress?: () => void;
   style?: any;
 }) => (
-  <Text 
+  <Text
     style={[
       { fontSize: fontSize === '100%' ? 16 : parseInt(fontSize), color },
       onPress && styles.linkText,
@@ -62,7 +64,6 @@ function WikiBookSearchResults() {
       try {
         await loadSearchWikiBooks(searchQry);
         setOpen(false);
-        // navigation.navigate('SearchBooks' as never, { title: searchQry } as never);
       } catch (error) {
         console.error('Search failed:', error);
       }
@@ -89,43 +90,49 @@ function WikiBookSearchResults() {
 
       <View style={styles.mainContent}>
         {/* Main Content Area */}
-        <ScrollView style={styles.resultsArea}>
-          {searchLoading ? (
-            <ActivityIndicator size="large" color="#0000ff" style={styles.loader} />
-          ) : bookSearchResults && bookSearchResults.length > 0 ? (
-            <View style={styles.resultsList}>
-              <Text style={styles.resultsTitle}>
-                {t("searchResultsFor")} "{searchQry}"
-              </Text>
-              {bookSearchResults.map((book) => (
-                <View key={book._id} style={styles.resultItem}>
+        {searchLoading ? (
+          <ActivityIndicator size="large" color="#0000ff" style={styles.loader} />
+        ) : bookSearchResults && bookSearchResults.length > 0 ? (
+          <View style={styles.resultsList}>
+            <Text style={styles.resultsTitle}>
+              {t("searchResultsFor")} "{searchQry}"
+            </Text>
+            <FlatList
+              data={bookSearchResults}
+              keyExtractor={(item) => item._id.toString()}
+              renderItem={({ item }) => (
+                <View key={item._id} style={styles.resultItem}>
                   <StyledText
                     color="#3182CE"
                     onPress={() => {
-                    //   navigation.navigate('WikiBook' as never, { id: book._id } as never);
+                      router.push({
+                        pathname: '/(drawer)/(tabs)/SearchBooks/details/[bookid]',
+                        params: { bookid: item._id }
+                      });
                     }}
                     style={styles.bookTitle}
                   >
-                    {book.displayName}
+                    {item.displayName}
                   </StyledText>
-                  <Text style={styles.description}>{book.description}</Text>
-                  <StyledText>
+                  <Text style={styles.description}>{item.description}</Text>
+                  <StyledText style={{ color: '#272626ff' }}>
                     <Span>{t("author")} </Span>
-                    {book.author}
+                    {item.author}
                   </StyledText>
-                  <StyledText>
+                  <StyledText style={{ color: '#272626ff' }}>
                     <Span>{t("publicationDate")} </Span>
-                    {new Date(book.publicationDate).toLocaleDateString()}
+                    {new Date(item.publicationDate).toLocaleDateString()}
                   </StyledText>
                 </View>
-              ))}
-            </View>
-          ) : (
-            <View style={styles.emptyState}>
-              <Text style={styles.emptyStateText}>{t("searchBooksAndStudiesFromHere")}</Text>
-            </View>
-          )}
-        </ScrollView>
+              )}
+            />
+          </View>
+        ) : (
+          <View style={styles.emptyState}>
+            <Text style={styles.emptyStateText}>{t("searchBooksAndStudiesFromHere")}</Text>
+          </View>
+        )}
+
       </View>
     </SafeAreaView>
   );
@@ -141,12 +148,26 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#E2E8F0',
     backgroundColor: '#F7FAFC',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
+    zIndex: 1000,
   },
   autocompleteContainer: {
     width: '100%',
+    zIndex: 1001,
   },
   mainContent: {
     flex: 1,
+    zIndex: 1,
   },
   resultsArea: {
     flex: 1,
@@ -161,7 +182,10 @@ const styles = StyleSheet.create({
   resultsTitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    paddingHorizontal: '5%',
     marginBottom: 16,
+    color: '#2D3748',
+    zIndex: 1,
   },
   resultItem: {
     padding: 16,
@@ -170,24 +194,40 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginBottom: 16,
     backgroundColor: '#FFFFFF',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.1,
+        shadowRadius: 2,
+      },
+      android: {
+        elevation: 2,
+      },
+    }),
   },
   bookTitle: {
     marginBottom: 8,
+    fontWeight: '600',
+    fontSize: 18,
   },
   description: {
     marginBottom: 8,
     color: '#4A5568',
+    lineHeight: 20,
   },
   emptyState: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 40,
+    marginTop: 50,
   },
   emptyStateText: {
     fontSize: 18,
     textAlign: 'center',
     color: '#718096',
+    lineHeight: 24,
   },
   linkText: {
     textDecorationLine: 'underline',

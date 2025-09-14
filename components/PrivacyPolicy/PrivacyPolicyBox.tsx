@@ -42,7 +42,12 @@ export function PrivacyPolicyBox() {
             mūsūʿah Privacy Policy
           </Text>
 
-          <View style={styles.imageContainer}>
+          <View style={{
+            ...styles.imageContainer,
+            backgroundColor: '#000',
+            justifyContent: 'center',
+            alignItems: 'center'
+            }}>
             <Image
               source={{ uri: 'https://qamarlabs.netlify.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75' }}
               style={styles.image}
@@ -252,7 +257,6 @@ const styles = StyleSheet.create({
   centeredText: {
     paddingVertical: 8,
     textAlign: 'center',
-    marginHorizontal: '10%',
     marginVertical: 4,
     fontSize: 16,
     lineHeight: 22,
@@ -272,7 +276,6 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
   contentSection: {
-    marginHorizontal: '10%',
   },
   boldText: {
     fontWeight: 'bold',

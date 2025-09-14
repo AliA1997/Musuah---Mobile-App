@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "Kitaplar",
         "booksAndStudiesPart2": "ve Araştırmalar"
     },
+    "navigationLinks": {
+        "more": "Daha Fazla",
+        "privacyPolicy": "Gizlilik Politikası"
+    },
     "links": {
         "es": "İspanyolca",
         "en": "İngilizce",

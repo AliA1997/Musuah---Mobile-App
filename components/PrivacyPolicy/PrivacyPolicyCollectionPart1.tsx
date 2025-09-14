@@ -157,18 +157,6 @@ export const PrivacyPolicyCollectionPart1 = () => {
             </Heading>
           </View>
 
-          <Text style={styles.paragraph}>
-            When you make a contribution to any Qamar Labs Site, including on user or discussion pages, you are creating a permanent, public record of every piece of content added, removed, or altered by you. The page history will show when your contribution or deletion was made, as well as your username (if you are signed in) or your{' '}
-            <Link href="/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#ip-address">
-              IP address
-            </Link>{' '}
-            (if you are not signed in). We may use your public contributions, either aggregated with the public contributions of others or individually, to create new features or data-related products for you or to learn more about how the Qamar Labs Sites are used, as further explained below in the{' '}
-            <Link onPress={() => Linking.openURL('#infowereceive')}>
-              "How We Use Information We Receive From You"
-            </Link>{' '}
-            section of this Privacy Policy.
-          </Text>
-
           {/* Collapsible Public Info Table */}
           <View style={styles.collapsibleContainer}>
             <View style={styles.collapsibleHeader}>

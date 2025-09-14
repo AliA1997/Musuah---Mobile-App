@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "書籍",
         "booksAndStudiesPart2": "と研究"
     },
+    "navigationLinks": {
+        "more": "もっと",
+        "privacyPolicy": "プライバシーポリシー"
+    },
     "links": {
         "es": "スペイン語",
         "en": "英語",

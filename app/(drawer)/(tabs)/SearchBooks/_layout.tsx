@@ -1,21 +1,20 @@
 import { Stack } from 'expo-router';
 import { HeaderButton } from '../../../../components/HeaderButton';
+import { Text, View } from 'react-native';
 
 const SearchWikiBooks = () => (
   <Stack>
     <Stack.Screen
       name="index"
       options={{
-        headerTitle: 'Search Books and Studies'
+        headerTitle: 'Search Books and Studies',
+        headerShown: false,
       }}
     />
-    {/* Dynamic route for wiki pages using pageid */}
     <Stack.Screen
-      name="[bookid]"
+      name="details/[bookid]"
       options={{
-        headerTitle: 'Wiki Book',
-        // You can make this dynamic based on the pageid
-        headerBackTitle: 'Back', // iOS only
+        headerTitle: '',
       }}
     />
   </Stack>

@@ -12,13 +12,13 @@ import {
 import { observer } from "mobx-react-lite";
 import { useTranslation } from "react-i18next";
 import { router } from "expo-router";
-import { useStore } from "../../store/index";
+import { useStore } from "../store/index";
 import i18n from "~/app/i18n/index";
-import { AutocompleteType } from "../../models/common";
+import { AutocompleteType } from "../models/common";
 
 
 // Assuming we have a custom Autocomplete component for React Native
-import Autocomplete from "../../components/common/Autocomplete";
+import Autocomplete from "./common/Autocomplete";
 import ChatbotIcon from "~/components/icons/ChatbotIcon";
 import EBooksIcon from "~/components/icons/EBooksIcon";
 
@@ -82,14 +82,14 @@ export default observer(function HomePage() {
 
     return (
         <ResponsiveContainer>
-            <ScrollView contentContainerStyle={styles.scrollContainer}>
+            <ScrollView contentContainerStyle={styles.scrollContainer} keyboardShouldPersistTaps="always">
                 {/* Header with logo and search */}
                 <View style={styles.headerContainer}>
                     <View style={styles.logoContainer}>
                         <Text style={styles.headerText}>mūsūʿah</Text>
                         <Text style={styles.subHeaderText}>The Free Encyclopedia</Text>
                         <Image
-                            source={require('../../assets/muslimwiki-globe.png')}
+                            source={require('../assets/muslimwiki-globe.png')}
                             style={styles.logo}
                             resizeMode="contain"
                         />

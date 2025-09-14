@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "पुस्तकें",
         "booksAndStudiesPart2": "और अध्ययन"
     },
+    "navigationLinks": {
+        "more": "और",
+        "privacyPolicy": "गोपनीयता नीति"
+    },
     "links": {
         "es": "स्पैनिश",
         "en": "अंग्रेज़ी",

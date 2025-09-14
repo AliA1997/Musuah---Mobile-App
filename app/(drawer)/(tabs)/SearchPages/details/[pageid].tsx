@@ -1,14 +1,12 @@
 
 import { useLocalSearchParams } from 'expo-router';
 import { View, Text } from 'react-native';
+import WikiPage from '~/components/WikiPage';
 
 export default function WikiPageDetail() {
   const { pageid } = useLocalSearchParams();
   
   return (
-    <View style={{ flex: 1, padding: 16 }}>
-      <Text>Wiki Page ID: {pageid}</Text>
-      {/* Add your page content here */}
-    </View>
+    <WikiPage />
   );
 }

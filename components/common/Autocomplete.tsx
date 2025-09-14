@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import { observer } from "mobx-react-lite";
-import { useNavigation } from "expo-router";
+import { router, useNavigation } from "expo-router";
 import { useStore } from "../../store";
 import { AutocompleteType } from "../../models/common";
 import { QueriedAutocompleteOption } from "../../models/search";
@@ -84,18 +84,23 @@ const SearchAutocomplete = observer(
       [autocompleteType]
     );
 
-    const onSelectItem = (item: any) => {
-      alert("JSONstringfigy: " + JSON.stringify(item))
-      // setSelected(item);
-      // setOpen(false);
-      // const { language } = commonStore;
-      // if (autocompleteType === AutocompleteType.SearchBooks) {
-      //   navigation.navigate("WikiBook", { lang: language, id: item.value });
-      // } else {
-      //   alert('test')
-      //   navigation.navigate({ pathname: '/(drawer)/(tabs)/SearchPages/details/[pageid]', params: { lang: language, pageid: item.value } });
-      // }
+    const onSelectItem = (item: QueriedAutocompleteOption) => {
+      setSelected(item);
+      setOpen(false);
+      const { language } = commonStore;
+      if (autocompleteType === AutocompleteType.SearchBooks) {
+        router.push({
+          pathname: "/(drawer)/(tabs)/SearchBooks/details/[bookid]",
+          params: { lang: language, bookid: item.value },
+        });
+      } else {
+        router.push({
+          pathname: "/(drawer)/(tabs)/SearchPages/details/[pageid]",
+          params: { lang: language, pageid: item.value },
+        });
+      }
     };
+
 
     // Close dropdown when tapping outside
     useEffect(() => {
@@ -121,7 +126,7 @@ const SearchAutocomplete = observer(
             onChangeText={onChangeText}
             placeholder={placeholder}
             style={styles.input}
-            onBlur={() => {
+            onPressOut={() => {
               // Small delay to allow item selection before closing
               setTimeout(() => setOpen(false), 200);
             }}
@@ -172,7 +177,10 @@ const SearchAutocomplete = observer(
                 renderItem={({ item }) => (
                   <TouchableOpacity
                     style={styles.dropdownItem}
-                    onPress={(e) => onSelectItem(item)}
+                    onPress={(e) => {
+                      e.preventDefault();
+                       onSelectItem(item)
+                    }}
                   >
                     <Text style={styles.dropdownText}>{item.text}</Text>
                     {autocompleteType === AutocompleteType.SearchBooks && item.primaryTopic && (
@@ -200,13 +208,14 @@ const SearchAutocomplete = observer(
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    zIndex: 1000, // Ensure dropdown appears above other content
+    zIndex: 100, // Ensure dropdown appears above other content
+    position: 'relative',
   },
   inputWrapper: {
     position: "relative",
     flexDirection: "row",
     alignItems: "center",
-    zIndex: 1001, // Higher than dropdown
+    zIndex: 101, // Higher than dropdown
   },
   input: {
     flex: 1,
@@ -225,7 +234,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 8,
     borderRadius: 20,
-    zIndex: 1002, // Highest z-index
+    zIndex: 102, // Highest z-index
   },
   dropdownContainer: {
     position: "absolute",
@@ -242,7 +251,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    zIndex: 999, // Below input but above other content
+    zIndex: 99, // Below input but above other content
   },
   flatList: {
     flex: 1,
@@ -254,6 +263,7 @@ const styles = StyleSheet.create({
   },
   dropdownItem: {
     padding: 12,
+    position: 'relative',
     zIndex: 999,
     borderBottomWidth: 1,
     borderBottomColor: "#f0f0f0",

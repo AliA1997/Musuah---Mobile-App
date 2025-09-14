@@ -1,5 +1,4 @@
 import { Stack } from 'expo-router';
-import { HeaderButton } from '../../../../components/HeaderButton';
 
 const SearchWikiPages = () => (
   <Stack>
@@ -9,13 +8,10 @@ const SearchWikiPages = () => (
         headerTitle: 'Search Pages'
       }}
     />
-    {/* Dynamic route for wiki pages using pageid */}
     <Stack.Screen
-      name="[pageid]"
+      name="details/[pageid]"
       options={{
-        headerTitle: 'Wiki Page',
-        // You can make this dynamic based on the pageid
-        headerBackTitle: 'Back', // iOS only
+        headerTitle: '',
       }}
     />
   </Stack>

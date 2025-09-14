@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "Libra",
         "booksAndStudiesPart2": "Dhe Studime"
     },
+    "navigationLinks": {
+        "more": "Më shumë",
+        "privacyPolicy": "Politika e Privatësisë"
+    },
     "links": {
         "es": "Spanjisht",
         "en": "Anglisht",

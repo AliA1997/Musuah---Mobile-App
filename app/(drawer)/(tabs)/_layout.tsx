@@ -8,7 +8,11 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: 'black',
+        tabBarActiveTintColor: '#4e755eff',
+        // tabBarInactiveTintColor: 
+        // headerPressColor: '#124a28',
+        // drawerActiveTintColor: '#4e755eff',
+        // headerTintColor: '#124a28',
       }}>
       <Tabs.Screen
         name="SearchPages"
@@ -20,6 +24,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="SearchBooks"
         options={{
+          headerStyle: { display: 'none' },
           title: 'Books And Studies',
           tabBarIcon: ({ color }) => <EBooksIcon width={30} height={30} />,
         }}

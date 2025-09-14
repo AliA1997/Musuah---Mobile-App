@@ -15,13 +15,14 @@ import { ATTRIBUTES_GIVEN_OWN_SECTION } from "./common/constants/wikipage";
 
 type RouteParams = {
   WikiPage: {
-    pageId?: string;
+    pageid?: string;
+    language?: string;
   };
 };
 
 const WikiPage = observer(() => {
   const route = useRoute<RouteProp<RouteParams, "WikiPage">>();
-  const pageId = route.params?.pageId;
+  const pageId = route.params?.pageid;
   const { wikiPageStore } = useStore();
   const { loadWikiPage, currentWikiPage, clearWikiPage, loading: loadingWikiPage } = wikiPageStore as any;
 

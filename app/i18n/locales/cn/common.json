@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "书籍",
         "booksAndStudiesPart2": "与研究"
     },
+    "navigationLinks": {
+        "more": "更多",
+        "privacyPolicy": "隐私政策"
+    },
     "links": {
         "es": "西班牙语",
         "en": "英语",

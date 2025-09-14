@@ -1,41 +1,36 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, ActivityIndicator, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useStore } from "../store";
-import { useRoute } from "@react-navigation/native";
 import { observer } from "mobx-react-lite";
-import { DeleteWikiBookRequest } from "../models/wikibook";
 import { useTranslation } from "react-i18next";
-import LoadingSkeleton from "./LoadingSkeleton";
+// import LoadingSkeleton from "./LoadingSkeleton";
+import { useLocalSearchParams } from "expo-router";
 
 function WikiBookPage() {
+  const { bookid } = useLocalSearchParams();
   const { t } = useTranslation(["common", "errors", "form"]);
   const { commonStore, wikiBookStore } = useStore();
   const { language } = commonStore;
   const { loadWikiBook, clearWikiBook, currentWikiBook } = wikiBookStore;
 
-  const route = useRoute<any>();
-  const { bookId } = route.params;
-
-  const [currentDeleteWikibookRequest, setCurrentWikibookRequest] = useState<DeleteWikiBookRequest | undefined>(
-    undefined
-  );
   const [mounted, setMounted] = useState<boolean>(false);
 
   async function getWikiBook() {
-    await loadWikiBook(bookId!);
+    await loadWikiBook(bookid as string);
   }
 
   useEffect(() => {
-    if (bookId) {
+    if (bookid) {
       getWikiBook();
+      setMounted(true);
     }
     return () => {
       clearWikiBook();
       setMounted(false);
     };
-  }, [bookId]);
+  }, [bookid]);
 
-  if (!currentWikiBook || !currentWikiBook._id) return <LoadingSkeleton />;
+  if (!currentWikiBook || !currentWikiBook._id) return <ActivityIndicator />;
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -51,29 +46,29 @@ function WikiBookPage() {
       {/* Details Grid */}
       <View style={styles.card}>
         <View style={styles.row}>
-          <Text style={styles.label}>{t("title", { ns: "common" })}:</Text>
+          <Text style={styles.label}>{t("title", { ns: "common" })}</Text>
           <Text style={styles.value}>{currentWikiBook.title}</Text>
         </View>
 
         <View style={styles.row}>
-          <Text style={styles.label}>{t("publicationYear", { ns: "common" })}:</Text>
+          <Text style={styles.label}>{t("publicationYear", { ns: "common" })}</Text>
           <Text style={styles.value}>{currentWikiBook.publicationYear}</Text>
         </View>
 
         <View style={styles.row}>
-          <Text style={styles.label}>{t("publicationDate", { ns: "common" })}:</Text>
+          <Text style={styles.label}>{t("publicationDate", { ns: "common" })}</Text>
           <Text style={styles.value}>
             {new Date(currentWikiBook.publicationDate).toLocaleDateString(language ?? "en")}
           </Text>
         </View>
 
         <View style={styles.row}>
-          <Text style={styles.label}>{t("primaryTopic", { ns: "common" })}:</Text>
+          <Text style={styles.label}>{t("primaryTopic", { ns: "common" })}</Text>
           <Text style={styles.value}>{currentWikiBook.primaryTopic}</Text>
         </View>
 
         <View style={styles.row}>
-          <Text style={styles.label}>{t("concepts", { ns: "common" })}:</Text>
+          <Text style={styles.label}>{t("concepts", { ns: "common" })}</Text>
           <View style={styles.badges}>
             {currentWikiBook?.concepts?.map((concept: string, idx: number) => (
               <Text key={idx} style={styles.badge}>

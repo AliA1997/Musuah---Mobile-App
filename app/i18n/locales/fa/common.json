@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "کتاب‌ها",
         "booksAndStudiesPart2": "و مطالعات"
     },
+    "navigationLinks": {
+        "more": "بیشتر",
+        "privacyPolicy":  "سیاست حفظ حریم خصوصی"
+    },
     "links": {
         "es": "اسپانیایی",
         "en": "انگلیسی",

@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "Knjige",
         "booksAndStudiesPart2": "I Studije"
     },
+    "navigationLinks": {
+        "more": "Još",
+        "privacyPolicy": "Politika Privatnosti"
+    },
     "links": {
         "es": "Španski",
         "en": "Engleski",

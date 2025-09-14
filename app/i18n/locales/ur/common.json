@@ -16,6 +16,10 @@
         "booksAndStudiesPart1": "کتابیں",
         "booksAndStudiesPart2": "اور مطالعے"
     },
+    "navigationLinks": {
+        "more": "مزید",
+        "privacyPolicy": "رازداری کی پالیسی"
+    },
     "links": {
         "es": "ہسپانوی",
         "en": "انگریزی",

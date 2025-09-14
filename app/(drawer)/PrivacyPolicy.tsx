@@ -1,5 +1,5 @@
-import { Text } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, Text } from 'react-native';
+
 import { PrivacyPolicyBox } from '~/components/PrivacyPolicy/PrivacyPolicyBox';
 import { PrivacyPolicyCollectionPart1 } from '~/components/PrivacyPolicy/PrivacyPolicyCollectionPart1';
 import PrivacyPolicyCollectionPart2 from '~/components/PrivacyPolicy/PrivacyPolicyCollectionPart2';

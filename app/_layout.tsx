@@ -1,5 +1,5 @@
 import '../global.css';
-import 'expo-dev-client';
+// import 'expo-dev-client';
 import { ThemeProvider as NavThemeProvider } from '@react-navigation/native';
 
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
@@ -64,6 +64,6 @@ const DRAWER_OPTIONS = {
 const MODAL_OPTIONS = {
   presentation: 'modal',
   animation: 'fade_from_bottom', // for android
-  title: 'Settings',
+  title: 'Contribute?',
   headerRight: () => <ThemeToggle />,
 } as const;

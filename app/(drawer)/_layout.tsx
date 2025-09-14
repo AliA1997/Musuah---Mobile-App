@@ -3,8 +3,11 @@ import { Link } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
 
 import { HeaderButton } from '../../components/HeaderButton';
+import { useTranslation } from 'react-i18next';
 
-const DrawerLayout = () => (
+const DrawerLayout = () => {
+  const { t } = useTranslation('common');
+  return (
   <Drawer
     screenOptions={{
       headerPressColor: '#124a28',
@@ -23,16 +26,16 @@ const DrawerLayout = () => (
     <Drawer.Screen
       name="PrivacyPolicy"
       options={{
-        headerTitle: 'Privacy Policy',
-        drawerLabel: 'Privacy Policy',
+        headerTitle: t("navigationLinks.privacyPolicy"),
+        drawerLabel: t("navigationLinks.privacyPolicy"),
         drawerIcon: ({ size, color }) => <Ionicons name="document-outline" size={size} color={'#124a28'} />,
       }}
     />
     <Drawer.Screen
       name="(tabs)"
       options={{
-        headerTitle: 'More',
-        drawerLabel: 'More',
+        headerTitle: t("navigationLinks.more"),
+        drawerLabel: t("navigationLinks.more"),
         drawerIcon: ({ size, color }) => (
           <Entypo name="dots-three-horizontal" size={24} color="black" />),
         headerRight: () => (
@@ -43,6 +46,7 @@ const DrawerLayout = () => (
       }}
     />
   </Drawer>
-);
+  );
+};
 
 export default DrawerLayout;

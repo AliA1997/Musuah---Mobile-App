@@ -8,6 +8,7 @@ import {
   SafeAreaView,
   ActivityIndicator,
   Linking,
+  FlatList,
 } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { useTranslation } from 'react-i18next';
@@ -18,20 +19,20 @@ import { AutocompleteType } from '../models/common';
 import useLoadDataFromGetQueryParams from '../hooks/useLoadDataFromQueryParams';
 
 // Styled components to replace Chakra UI
-const StyledText = ({ 
-  children, 
-  fontSize = 16, 
-  color = '#3182CE', 
-  onPress, 
-  style 
-}: { 
-  children: React.ReactNode; 
-  fontSize?: number; 
-  color?: string; 
-  onPress?: () => void; 
+const StyledText = ({
+  children,
+  fontSize = 16,
+  color = '#3182CE',
+  onPress,
+  style
+}: {
+  children: React.ReactNode;
+  fontSize?: number;
+  color?: string;
+  onPress?: () => void;
   style?: any;
 }) => (
-  <Text 
+  <Text
     style={[
       { fontSize, color },
       onPress && styles.linkText,
@@ -55,8 +56,6 @@ export default observer(function WikiSearchResults() {
       try {
         await loadSearchWikiPages(searchQry);
         setOpen(false);
-        // For React Native, we navigate instead of changing window.location
-        // navigation.navigate('Search' as never, { title: searchQry } as never);
       } catch (error) {
         console.error('Search failed:', error);
       }
@@ -66,10 +65,10 @@ export default observer(function WikiSearchResults() {
   useLoadDataFromGetQueryParams({ key: "title", loadData: loadSearchWikiPages });
 
   const handleItemPress = (pageid: string) => {
-    // navigation.navigate('WikiPage' as never, { 
-    //   id: pageid,
-    //   language 
-    // } as never);
+    router.push({
+      pathname: '/(drawer)/(tabs)/SearchPages/details/[pageid]',
+      params: { pageid }
+    });
   };
 
   return (
@@ -89,37 +88,36 @@ export default observer(function WikiSearchResults() {
       </View>
 
       <View style={styles.mainContent}>
-        {/* Main Content Area */}
-        <ScrollView style={styles.resultsArea}>
-          {searchLoading ? (
-            <ActivityIndicator size="large" color="#0000ff" style={styles.loader} />
-          ) : searchResults && searchResults.length > 0 ? (
-            <View style={styles.resultsList}>
-              <Text style={styles.resultsTitle}>
-                {t("searchResultsFor")} "{searchQry}"
-              </Text>
-              {searchResults.map((itm) => (
-                <TouchableOpacity 
-                  key={itm.id} 
+        {searchLoading ? (
+          <ActivityIndicator size="large" color="#0000ff" style={styles.loader} />
+        ) : searchResults && searchResults.length > 0 ? (
+          <View style={styles.resultsList}>
+            <Text style={styles.resultsTitle}>
+              {t("searchResultsFor")} "{searchQry}"
+            </Text>
+            <FlatList
+              data={searchResults}
+              keyExtractor={(item) => item.id.toString()}
+              renderItem={({ item }) => (
+                <View
                   style={styles.resultItem}
-                  onPress={() => handleItemPress(itm.pageid as any)}
                 >
                   <StyledText
                     style={styles.itemTitle}
-                    onPress={() => handleItemPress(itm.pageid as any)}
+                    onPress={() => handleItemPress(item.pageid.toString())}
                   >
-                    {itm.title}
+                    {item.title}
                   </StyledText>
-                  <Text style={styles.summary}>{itm.summary}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          ) : (
-            <View style={styles.emptyState}>
-              <Text style={styles.emptyStateText}>{t("searchPagesFromHere")}</Text>
-            </View>
-          )}
-        </ScrollView>
+                  <Text style={styles.summary}>{item.summary}</Text>
+                </View>
+              )}
+            />
+          </View>
+        ) : (
+          <View style={styles.emptyState}>
+            <Text style={styles.emptyStateText}>{t("searchPagesFromHere")}</Text>
+          </View>
+        )}
       </View>
     </SafeAreaView>
   );
@@ -146,12 +144,18 @@ const styles = StyleSheet.create({
         elevation: 3,
       },
     }),
+    // Ensure header has higher zIndex than content
+    zIndex: 1000,
   },
   autocompleteContainer: {
     width: '100%',
+    // Higher zIndex to ensure autocomplete options appear above everything
+    zIndex: 1001,
   },
   mainContent: {
     flex: 1,
+    // Lower zIndex to ensure content stays behind header and autocomplete
+    zIndex: 1,
   },
   resultsArea: {
     flex: 1,
@@ -167,8 +171,11 @@ const styles = StyleSheet.create({
   resultsTitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    paddingHorizontal: '5%',
     marginBottom: 16,
     color: '#2D3748',
+    // Ensure title stays behind autocomplete options
+    zIndex: 1,
   },
   resultItem: {
     padding: 16,
@@ -219,3 +226,4 @@ const styles = StyleSheet.create({
 
 // Platform-specific imports
 import { Platform } from 'react-native';
+import { router } from 'expo-router';
