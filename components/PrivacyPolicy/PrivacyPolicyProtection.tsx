@@ -25,7 +25,7 @@ export const PrivacyPolicyProtection = () => {
             We strive to protect your Personal Information from unauthorized access, use, or disclosure. We use a variety of physical and technical measures, policies, and procedures (such as access control procedures, network firewalls, and physical security) designed to protect our systems and your Personal Information. Unfortunately, there is no such thing as completely secure data transmission or storage, so we cannot guarantee that our security will not be breached (by technical measures or through violation of our policies and procedures).
           </Text>
           <Text style={styles.paragraph}>
-            We will never ask for your password by email (but may send you a temporary password via email if you have requested a password reset). If you ever receive an email that requests your password, <Text style={styles.underline}>please let us know by sending it to privacy@wikimedia.org, so we can investigate the source of the email</Text>.
+            We will never ask for your password by email (but may send you a temporary password via email if you have requested a password reset). If you ever receive an email that requests your password, <Text style={styles.underline}>please let us know by sending it to privacy@qamarlabs.netlify.app, so we can investigate the source of the email</Text>.
           </Text>
         </>
       ),
@@ -37,10 +37,10 @@ export const PrivacyPolicyProtection = () => {
       content: (
         <>
           <Text style={styles.paragraph}>
-            Once we receive Personal Information from you, we keep it for the shortest possible time that is consistent with the maintenance, understanding, and improvement of the Wikimedia Sites, and our obligations under applicable law. In most instances, Personal Information is deleted, aggregated or de-identified after 90 days. Non-Personal Information may be retained indefinitely as appropriate. (Check out the list of examples in our{" "}
+            Once we receive Personal Information from you, we keep it for the shortest possible time that is consistent with the maintenance, understanding, and improvement of the Qamar Labs Sites, and our obligations under applicable law. In most instances, Personal Information is deleted, aggregated or de-identified after 90 days. Non-Personal Information may be retained indefinitely as appropriate. (Check out the list of examples in our{" "}
             <Text
               style={styles.link}
-              onPress={() => Linking.openURL("/wiki/Special:MyLanguage/Policy:Privacy_policy/Frequently_asked_questions#datatimeexamplesFAQ")}
+              onPress={() => Linking.openURL("https://qamarlabs.netlify.app/")}
             >
               FAQ
             </Text>
@@ -48,17 +48,17 @@ export const PrivacyPolicyProtection = () => {
           </Text>
           <Text style={styles.paragraph}>
             <Text nativeID="rememberIPindef" />
-            Please remember that when you make a contribution to any Wikimedia Site, the page history will show when your contribution was made, your username (if you are signed in), or your{" "}
+            Please remember that when you make a contribution to any Qamar Labs Site, the page history will show when your contribution was made, your username (if you are signed in), or your{" "}
             <Text
               style={styles.link}
-              onPress={() => Linking.openURL("/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#ip-address")}
+              onPress={() => Linking.openURL("https://qamarlabs.netlify.app/")}
             >
               IP address
             </Text>{" "}
             (if you edit while not logged in). The transparency of the projects' contribution and revision histories is critical to their efficacy and trustworthiness. To learn more about our data retention practices, see our{" "}
             <Text
               style={styles.link}
-              onPress={() => Linking.openURL("/wiki/Special:MyLanguage/Legal:Data_retention_guidelines")}
+              onPress={() => Linking.openURL("https://qamarlabs.netlify.app/")}
             >
               data retention guidelines
             </Text>
@@ -77,14 +77,14 @@ export const PrivacyPolicyProtection = () => {
             For information about how you may request removal of your Personal Information, or other rights you may have with respect to your Personal Information, see our{" "}
             <Text
               style={styles.link}
-              onPress={() => Linking.openURL("/wiki/Privacy_policy/FAQ#anonymize")}
+              onPress={() => Linking.openURL("https://qamarlabs.netlify.app/")}
             >
               FAQ
             </Text>
             . If you would like to request to access, update or restrict/object to the processing of Personal Information, or receive a copy of your Personal Information for purposes of transmitting it to another organization, you may{" "}
             <Text
               style={styles.link}
-              onPress={() => Linking.openURL("/wiki/Privacy_policy#contact-us")}
+              onPress={() => Linking.openURL("https://qamarlabs.netlify.app/")}
             >
               Contact Us
             </Text>
@@ -103,13 +103,6 @@ export const PrivacyPolicyProtection = () => {
       case 2:
         return (
           <View style={styles.headingContainer}>
-            {!isMobile && (
-              <Image
-                source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/WMF_safe.png/60px-WMF_safe.png" }}
-                style={styles.icon}
-                accessibilityLabel="Protection icon"
-              />
-            )}
             <Text style={[styles.heading, styles.heading2]} nativeID={id}>
               {title}
             </Text>
@@ -146,21 +139,6 @@ export const PrivacyPolicyProtection = () => {
             <View nativeID={section.id} />
             {renderHeading(section.level, section.title, section.title.replace(/\s+/g, "_"))}
             {section.content}
-            
-            {!isMobile && section.content && (
-              <View style={styles.backToTopContainer}>
-                <TouchableOpacity onPress={handleBackToTop}>
-                  <Text style={styles.link}>Back to top</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => Linking.openURL("/wiki/Privacy_policy#top")}>
-                  <Image
-                    source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/c/ce/WWC_arrow_up.png" }}
-                    style={styles.arrowIcon}
-                    accessibilityLabel="Up arrow"
-                  />
-                </TouchableOpacity>
-              </View>
-            )}
           </View>
         ))}
       </View>

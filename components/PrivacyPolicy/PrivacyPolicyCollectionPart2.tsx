@@ -73,11 +73,11 @@ export const PrivacyPolicyCollectionPart2 = () => {
   };
 
   const listItems = [
-    "Provide you with a customizable experience, such as using cookies to know your language preference, to remember the user preferences you set so we can provide you with the customized look and feel that you want, and to tell you about interesting Wikimedia issues and events in your area.",
+    "Provide you with a customizable experience, such as using cookies to know your language preference, to remember the user preferences you set so we can provide you with the customized look and feel that you want, and to tell you about interesting Qamar Labs issues and events in your area.",
     "Deliver more relevant content to you faster. For example, we use local storage to store your most recently read articles directly on your device, so they can be retrieved quickly. Also, we use cookies to learn about the topics searched so that we can optimize the search results we deliver to you.",
-    "Understand how you use the Wikimedia Sites, so that we know what works and what is useful. For example, we might use cookies to learn about the list of articles you are following on your watchlist so that we can recommend similar articles that you may be interested in.",
-    "Understand how you use the Wikimedia Sites across different devices, so that we can make our varied Wikimedia Sites more efficient and effective for you.",
-    "Make the Wikimedia Sites more convenient to use, such as by using cookies to maintain your session when you log in or to remember your username in the login field."
+    "Understand how you use the Qamar Labs Sites, so that we know what works and what is useful. For example, we might use cookies to learn about the list of articles you are following on your watchlist so that we can recommend similar articles that you may be interested in.",
+    "Understand how you use the Qamar Labs Sites across different devices, so that we can make our varied Qamar Labs Sites more efficient and effective for you.",
+    "Make the Qamar Labs Sites more convenient to use, such as by using cookies to maintain your session when you log in or to remember your username in the login field."
   ];
 
   return (
@@ -85,7 +85,7 @@ export const PrivacyPolicyCollectionPart2 = () => {
       {/* First section */}
       <View style={styles.section}>
         <Text style={styles.text}>
-          We want to make the Wikimedia Sites better for you by learning more about how you use them. Examples of this might include how often you visit the Wikimedia Sites, what you like, what you find helpful, how you get to the Wikimedia Sites, and whether you would use a helpful feature more if we explained it differently. We also want this Policy and our practices to reflect our community's values. For this reason, we keep information related to your use of the Wikimedia Sites confidential, except as provided in this Policy.
+          We want to make the Qamar Labs Sites better for you by learning more about how you use them. Examples of this might include how often you visit the Qamar Labs Sites, what you like, what you find helpful, how you get to the Qamar Labs Sites, and whether you would use a helpful feature more if we explained it differently. We also want this Policy and our practices to reflect our community's values. For this reason, we keep information related to your use of the Qamar Labs Sites confidential, except as provided in this Policy.
         </Text>
         <TouchableOpacity style={styles.backToTop} onPress={scrollToTop}>
           <Text style={styles.link}>Back to top</Text>
@@ -98,7 +98,7 @@ export const PrivacyPolicyCollectionPart2 = () => {
           Information We Receive Automatically
         </Text>
         <Text style={styles.text}>
-          Because of how browsers work, we receive some information automatically when you visit the Wikimedia Sites. This includes when you use an online tool on a third-party site that loads information coming from the Wikimedia Sites. This information includes the type of device you are using (possibly including unique device identification numbers, for some beta versions of our mobile applications), the type and version of your{' '}
+          Because of how browsers work, we receive some information automatically when you visit the Qamar Labs Sites. This includes when you use an online tool on a third-party site that loads information coming from the Qamar Labs Sites. This information includes the type of device you are using (possibly including unique device identification numbers, for some beta versions of our mobile applications), the type and version of your{' '}
           <Text style={styles.link} onPress={() => handleLinkPress('/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#browsers')}>
             browser
           </Text>
@@ -106,10 +106,10 @@ export const PrivacyPolicyCollectionPart2 = () => {
           <Text style={styles.link} onPress={() => handleLinkPress('/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#operating-system')}>
             operating system
           </Text>
-          , in some cases the name of your internet service provider or mobile carrier, the website that referred you to the Wikimedia Sites, which pages you request and visit, and the date and time of each request you make to the Wikimedia Sites.
+          , in some cases the name of your internet service provider or mobile carrier, the website that referred you to the Qamar Labs Sites, which pages you request and visit, and the date and time of each request you make to the Qamar Labs Sites.
         </Text>
         <Text style={styles.text}>
-          Put simply, we use this information to enhance your experience with Wikimedia Sites. For example, we use this information to administer the sites, provide greater security, and fight vandalism; optimize mobile applications, customize content and set language preferences, test features to see what works, and improve performance; understand how users interact with the Wikimedia Sites, track and study use of various features, gain understanding about the demographics of the different Wikimedia Sites, and analyze trends.
+          Put simply, we use this information to enhance your experience with Qamar Labs Sites. For example, we use this information to administer the sites, provide greater security, and fight vandalism; optimize mobile applications, customize content and set language preferences, test features to see what works, and improve performance; understand how users interact with the Qamar Labs Sites, track and study use of various features, gain understanding about the demographics of the different Qamar Labs Sites, and analyze trends.
         </Text>
         <TouchableOpacity style={styles.backToTop} onPress={scrollToTop}>
           <Text style={styles.link}>Back to top</Text>
@@ -138,19 +138,19 @@ export const PrivacyPolicyCollectionPart2 = () => {
           <Text style={styles.link} onPress={() => handleLinkPress('/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#local-storage')}>
             local storage
           </Text>
-          . These types of technologies may also be used in online tools on a third-party site that loads information from the Wikimedia Sites. We realize that some of these technologies do not have the best reputation in town and can be used for less-than-noble purposes. So we want to be as clear as we can about why we use these methods and the type of information we collect with them.
+          . These types of technologies may also be used in online tools on a third-party site that loads information from the Qamar Labs Sites. We realize that some of these technologies do not have the best reputation in town and can be used for less-than-noble purposes. So we want to be as clear as we can about why we use these methods and the type of information we collect with them.
         </Text>
         <Text style={styles.text}>
           Depending on which technology we use, locally stored data may include text, Personal Information (like your{' '}
           <Text style={styles.link} onPress={() => handleLinkPress('/wiki/Special:MyLanguage/Policy:Privacy_policy/Glossary_of_key_terms#ip-address')}>
             IP address
           </Text>
-          ), and information about your use of the Wikimedia Sites (like your username or the time of your visit). See below for more information.
+          ), and information about your use of the Qamar Labs Sites (like your username or the time of your visit). See below for more information.
         </Text>
         <Text style={styles.text}>
-          We use this information to make your experience with the Wikimedia Sites safer and better, to gain a greater understanding of user preferences and their interaction with the Wikimedia Sites, and to generally improve our services. We will never use third-party cookies, unless we get your permission to do so. If you ever come across a third-party data collection tool that has not been authorized by you (such as one that may have been mistakenly placed by another user or administrator), please report it to us at{' '}
-          <Text style={styles.link} onPress={() => handleLinkPress('mailto:privacy@wikimedia.org')}>
-            privacy@wikimedia.org
+          We use this information to make your experience with the Qamar Labs Sites safer and better, to gain a greater understanding of user preferences and their interaction with the Qamar Labs Sites, and to generally improve our services. We will never use third-party cookies, unless we get your permission to do so. If you ever come across a third-party data collection tool that has not been authorized by you (such as one that may have been mistakenly placed by another user or administrator), please report it to us at{' '}
+          <Text style={styles.link} onPress={() => handleLinkPress('mailto:novigo.ali@gmail.com')}>
+            privacy@qamarlabs.netlify.app
           </Text>
           .
         </Text>
@@ -179,7 +179,7 @@ export const PrivacyPolicyCollectionPart2 = () => {
           <Text style={styles.link} onPress={() => handleLinkPress('/wiki/Privacy_policy/FAQ#publiclogsFAQ')}>
             public logs
           </Text>
-          {' '}alongside actions taken by other users. For example, a public log may include the date your account was created on a Wikimedia Site along with the dates that other accounts were created on a Wikimedia Site.
+          {' '}alongside actions taken by other users. For example, a public log may include the date your account was created on a Qamar Labs Site along with the dates that other accounts were created on a Qamar Labs Site.
         </Text>
         <TouchableOpacity style={styles.backToTop} onPress={scrollToTop}>
           <Text style={styles.link}>Back to top</Text>

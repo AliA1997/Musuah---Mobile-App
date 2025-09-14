@@ -25,11 +25,11 @@ export const PrivacyPolicyIntroduction = () => {
       <View style={styles.introductionContainer}>
         {!isMobile && (
           <TouchableOpacity 
-            onPress={() => handleLinkPress('https://en.wikipedia.org/wiki/File:WMF_open_door.png')}
+            onPress={() => handleLinkPress('https://musuah.com/')}
             style={styles.imageLink}
           >
             <Image
-              source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/WMF_open_door.png/60px-WMF_open_door.png' }}
+              source={{ uri: 'https://qamarlabs.netlify.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75' }}
               style={styles.image}
               accessibilityLabel="WMF Open Door"
             />
@@ -48,23 +48,23 @@ export const PrivacyPolicyIntroduction = () => {
             
             <View style={styles.textContainer}>
               <Text style={styles.paragraph}>
-                The Wikimedia movement is founded on a simple, but powerful principle: we can do more together than any of us can do alone. We cannot work collectively without gathering, sharing, and analyzing information about our users as we seek new ways to make the Wikimedia Sites more usable, safer, and more beneficial.
+                The Qamar Labs movement is founded on a simple, but powerful principle: we can do more together than any of us can do alone. We cannot work collectively without gathering, sharing, and analyzing information about our users as we seek new ways to make the Qamar Labs Sites more usable, safer, and more beneficial.
               </Text>
               
               <Text style={styles.paragraph}>
-                We believe that information-gathering and use should go hand-in-hand with transparency. This Privacy Policy explains how the Wikimedia Foundation, the non-profit organization that hosts the Wikimedia Sites, like Wikipedia, collects, uses, and shares information we receive from you through your use of the Wikimedia Sites. It is essential to understand that, by using any of the Wikimedia Sites, you consent to the collection, transfer, processing, storage, disclosure, and use of your information as described in this Privacy Policy. That means that reading this Policy carefully is important.
+                We believe that information-gathering and use should go hand-in-hand with transparency. This Privacy Policy explains how the Qamar Labs Foundation, the non-profit organization that hosts the Qamar Labs Sites, like Wikipedia, collects, uses, and shares information we receive from you through your use of the Qamar Labs Sites. It is essential to understand that, by using any of the Qamar Labs Sites, you consent to the collection, transfer, processing, storage, disclosure, and use of your information as described in this Privacy Policy. That means that reading this Policy carefully is important.
               </Text>
               
               <Text style={styles.paragraph}>
-                We believe that you should not have to provide nonpublic Personal Information to participate in the free knowledge movement. You do not have to provide things like your real name, address, or date of birth to sign up for a standard account or contribute content to the Wikimedia Sites.
+                We believe that you should not have to provide nonpublic Personal Information to participate in the free knowledge movement. You do not have to provide things like your real name, address, or date of birth to sign up for a standard account or contribute content to the Qamar Labs Sites.
               </Text>
               
               <Text style={styles.paragraph} id="donotsell">
-                We do not sell or rent your Personal Information, nor do we give it to others to sell you anything. We use it to figure out how to make the Wikimedia Sites more engaging and accessible, to see which ideas work, and to make learning and contributing more fun. Put simply: we use this information to make the Wikimedia Sites better for you.
+                We do not sell or rent your Personal Information, nor do we give it to others to sell you anything. We use it to figure out how to make the Qamar Labs Sites more engaging and accessible, to see which ideas work, and to make learning and contributing more fun. Put simply: we use this information to make the Qamar Labs Sites better for you.
               </Text>
               
               <Text style={styles.paragraph}>
-                After all, it is people like you, the champions of free knowledge, who make it possible for the Wikimedia Sites to not only exist, but also grow and thrive.
+                After all, it is people like you, the champions of free knowledge, who make it possible for the Qamar Labs Sites to not only exist, but also grow and thrive.
               </Text>
             </View>
           </View>
@@ -73,20 +73,6 @@ export const PrivacyPolicyIntroduction = () => {
           <View style={styles.definitionsSection} id="definitions">
             <View style={styles.definitionsHeader}>
               <Text style={styles.heading4}>Definitions</Text>
-              {!isMobile && (
-                <View style={styles.backToTopContainer}>
-                  <TouchableOpacity onPress={() => {}}>
-                    <Text style={styles.link}>Back to top</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity onPress={() => handleLinkPress('https://en.wikipedia.org/wiki/Privacy_policy#top')}>
-                    <Image
-                      source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/WWC_arrow_up.png' }}
-                      style={styles.arrowImage}
-                      accessibilityLabel="Back to top"
-                    />
-                  </TouchableOpacity>
-                </View>
-              )}
             </View>
           </View>
         </View>

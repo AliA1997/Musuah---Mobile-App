@@ -26,7 +26,7 @@ export function PrivacyPolicyImportantInfo() {
   };
 
   const handleEmailPress = () => {
-    Linking.openURL('mailto:privacy@wikimedia.org');
+    Linking.openURL('mailto:ali.novigo@gmail.com');
   };
 
   const sections: Section[] = [
@@ -36,17 +36,17 @@ export function PrivacyPolicyImportantInfo() {
       level: 0,
       content: (
         <Text style={[styles.text, styles.boldText, styles.mb4]}>
-          For the protection of the Wikimedia Foundation and other users, if you do not agree with this Privacy Policy, you may not use the Wikimedia Sites.
+          For the protection of the Qamar Labs Foundation and other users, if you do not agree with this Privacy Policy, you may not use the Qamar Labs Applications.
         </Text>
       ),
     },
     {
       id: "where-is-the-wmf",
-      title: "Where is the Foundation & What Does That Mean for Me?",
+      title: "What is Qamar Labs & What Does That Mean for Me?",
       level: 3,
       content: (
         <Text style={[styles.text, styles.mb4]}>
-          The Wikimedia Foundation is a non-profit organization based in San Francisco, California, with servers and data centers located in the U.S. If you decide to use Wikimedia Sites, whether from inside or outside of the U.S., you understand that your Personal Information will be collected, transferred, stored, processed, disclosed and otherwise used in the U.S. as described in this Privacy Policy. You also understand that your information may be transferred by us from the U.S. to other countries, which may have different or less stringent data protection laws than your country, in connection with providing services to you.
+          The Qamar Labs is a profit organization based in United States, with servers and data centers located in the U.S. If you decide to use Qamar Labs Applications, whether from inside or outside of the U.S., you understand that your Personal Information will be collected, transferred, stored, processed, disclosed and otherwise used in the U.S. as described in this Privacy Policy. You also understand that your information may be transferred by us from the U.S. to other countries, which may have different or less stringent data protection laws than your country, in connection with providing services to you.
         </Text>
       ),
     },
@@ -89,33 +89,9 @@ export function PrivacyPolicyImportantInfo() {
             Because things naturally change over time and we want to ensure our Privacy Policy accurately reflects our practices and the law, it may be necessary to modify this Privacy Policy from time to time. We reserve the right to do so in the following manner:
           </Text>
           <View style={[styles.listContainer, styles.mb4]}>
-            <View style={styles.listItem}>
-              <Text style={styles.text}>
-                • In the event of substantial changes, we will provide the proposed changes to our users in at least three (3) languages (selected at our discretion) for an open comment period lasting at least thirty (30) calendar days. Prior to the start of any comment period, we will provide notice of such changes and the opportunity to comment via the Wikimedia Sites, and via a notification on{" "}
-                <Text
-                  style={styles.link}
-                  onPress={() => handleLinkPress("https://lists.wikimedia.org/mailman/listinfo/wikimediaannounce-l")}
-                >
-                  WikimediaAnnounce-L
-                </Text>{" "}
-                or a similar mailing list.
-              </Text>
-            </View>
-            <View style={styles.listItem}>
-              <Text style={styles.text}>
-                • For minor changes, such as grammatical fixes, administrative or legal changes, or corrections of inaccurate statements, we will post the changes and, when possible, provide at least three (3) calendar days' prior notice via{" "}
-                <Text
-                  style={styles.link}
-                  onPress={() => handleLinkPress("https://lists.wikimedia.org/mailman/listinfo/wikimediaannounce-l")}
-                >
-                  WikimediaAnnounce-L
-                </Text>{" "}
-                or similar mailing list.
-              </Text>
-            </View>
           </View>
           <Text style={[styles.text, styles.mb4]}>
-            We ask that you please review the most up-to-date version of our Privacy Policy. Your continued use of the Wikimedia Sites after any effective date of a subsequent version of this Privacy Policy constitutes acceptance of this Privacy Policy on your part.
+            We ask that you please review the most up-to-date version of our Privacy Policy. Your continued use of the Qamar Labs Sites after any effective date of a subsequent version of this Privacy Policy constitutes acceptance of this Privacy Policy on your part.
           </Text>
         </>
       ),
@@ -129,33 +105,33 @@ export function PrivacyPolicyImportantInfo() {
           <Text style={[styles.text, styles.mb4]}>
             If you have questions or suggestions about this Privacy Policy, or the information collected under this Privacy Policy, please email us at{" "}
             <Text style={styles.link} onPress={handleEmailPress}>
-              privacy@wikimedia.org
+              privacy@qamarlabs.netlify.app
             </Text>{" "}
             or{" "}
             <Text
               style={styles.link}
-              onPress={() => handleLinkPress("https://wikimediafoundation.org/about/contact/")}
+              onPress={() => handleLinkPress("https://qamarlabs.netlify.app/contact")}
             >
               contact us
             </Text>{" "}
-            directly. If you are located in the European Economic Area and have questions about your personal data or would like to request to access, update, or delete it, you may contact our representative via email at EUrepresentative.Wikimedia@twobirds.com, or via mail at:
+            directly. If you are located in the European Economic Area and have questions about your personal data or would like to request to access, update, or delete it, you may contact our representative via email at EU representative. ali.novigo@gmail.com, or via mail at:
           </Text>
           <View style={[styles.addressContainer, styles.mb4]}>
-            <Text style={styles.text}>• Bird & Bird GDPR Representative Ireland</Text>
-            <Text style={styles.text}>• 29 Earlsfort Terrace</Text>
-            <Text style={styles.text}>• Dublin 2</Text>
-            <Text style={styles.text}>• D02 AY28</Text>
-            <Text style={styles.text}>• Ireland</Text>
+            <Text style={styles.text}>• Name Classified</Text>
+            <Text style={styles.text}>• Tampa</Text>
+            <Text style={styles.text}>• Address Classified</Text>
+            <Text style={styles.text}>• Address 2 Classified</Text>
+            <Text style={styles.text}>• United States</Text>
           </View>
           <Text style={[styles.text, styles.mb4]}>
-            If you are an individual located in the United Kingdom, and have questions about your personal data or would like to request to access, update, or delete it, you may contact our representative via email at UKrepresentative.Wikimedia@twobirds.com, or via mail at:
+            If you are an individual located in the United Kingdom, and have questions about your personal data or would like to request to access, update, or delete it, you may contact our representative via email at UK representative. ali.novigo@gmail.com, or via mail at:
           </Text>
           <View style={[styles.addressContainer, styles.mb4]}>
-            <Text style={styles.text}>• Bird & Bird GDPR Representative Services UK</Text>
-            <Text style={styles.text}>• 12 New Fetter Lane</Text>
-            <Text style={styles.text}>• London</Text>
-            <Text style={styles.text}>• EC4A 1JP</Text>
-            <Text style={styles.text}>• United Kingdom</Text>
+            <Text style={styles.text}>• Name Classified</Text>
+            <Text style={styles.text}>• Tampa</Text>
+            <Text style={styles.text}>• Address Classified</Text>
+            <Text style={styles.text}>• Address 2 Classified</Text>
+            <Text style={styles.text}>• United States</Text>
           </View>
           <Text style={[styles.text, styles.mb4]}>
             Our European Economic Area and United Kingdom Representative can only be contacted for queries in relation to data protection.
@@ -173,7 +149,7 @@ export function PrivacyPolicyImportantInfo() {
       content: (
         <>
           <Text style={[styles.text, styles.mb4]}>
-            Thank you for reading our Privacy Policy. We hope you enjoy using the Wikimedia Sites and appreciate your participation in creating, maintaining, and constantly working to improve the largest repository of free knowledge in the world.
+            Thank you for reading our Privacy Policy. We hope you enjoy using the Qamar Labs Sites and appreciate your participation in creating, maintaining, and constantly working to improve the largest repository of free knowledge in the world.
           </Text>
           <Text style={[styles.text, styles.boldText, styles.mb4]}>
             Please note that in the event of any differences in meaning or interpretation between the original English version of this Privacy Policy and a translation, the original English version takes precedence.
@@ -188,13 +164,6 @@ export function PrivacyPolicyImportantInfo() {
       case 2:
         return (
           <View style={styles.headingContainer}>
-            {!isMobile && (
-              <Image
-                source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/WMF_sign.png/60px-WMF_sign.png" }}
-                style={styles.icon}
-                resizeMode="contain"
-              />
-            )}
             <Text style={[styles.heading, styles.h2]}>{title}</Text>
           </View>
         );
@@ -217,21 +186,6 @@ export function PrivacyPolicyImportantInfo() {
             <View nativeID={section.id} />
             {section.level > 0 && renderHeading(section.level, section.title, section.title.replace(/\s+/g, "_"))}
             {section.content}
-
-            {!isMobile && section.content && section.level > 0 && (
-              <View style={styles.backToTop}>
-                <TouchableOpacity onPress={() => Linking.openURL('#top')}>
-                  <Text style={styles.link}>Back to top</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => handleLinkPress("/wiki/Privacy_policy#top")}>
-                  <Image
-                    source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/c/ce/WWC_arrow_up.png" }}
-                    style={styles.arrowIcon}
-                    resizeMode="contain"
-                  />
-                </TouchableOpacity>
-              </View>
-            )}
           </View>
         ))}
       </View>

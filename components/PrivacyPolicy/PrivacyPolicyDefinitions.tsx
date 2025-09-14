@@ -110,21 +110,21 @@ export const PrivacyPolicyDefinitions = () => {
           </View>
           
           <View style={styles.tableRow}>
-            <Text style={styles.tableCell}>"the Wikimedia Foundation" / "the Foundation" / "we" / "us" / "our"</Text>
+            <Text style={styles.tableCell}>"the Qamar Labs Foundation" / "the Foundation" / "we" / "us" / "our"</Text>
             <Text style={styles.tableCell}>
-              The <Link href="https://wikimediafoundation.org/">
-                Wikimedia Foundation, Inc.
-              </Link>, the non-profit organization that operates the Wikimedia Sites.
+              The <Link href="https://qamarlabs.netlify.app/">
+                Qamar Labs Foundation, Inc.
+              </Link>, the non-profit organization that operates the Qamar Labs Sites.
             </Text>
           </View>
 
           <View style={styles.tableRow}>
-            <Text style={styles.tableCell}>"Wikimedia Sites" / "our services"</Text>
+            <Text style={styles.tableCell}>"Qamar Labs Sites" / "our services"</Text>
             <Text style={styles.tableCell}>
-              Wikimedia websites and services (regardless of language), including our{" "}
-              <Link href="https://wikimediafoundation.org/our-work/wikimedia-projects/">
+              Qamar Labs websites and services (regardless of language), including our{" "}
+              <Link href="https://qamarlabs.netlify.app/">
                 main projects
-              </Link>, such as Wikipedia and Wikimedia Commons, as well as mobile applications,
+              </Link>, such as Musuah and Qamar Labs Commons, as well as mobile applications,
               Application Programming Interfaces (APIs), emails, and notifications; excluding, however,
               sites and services listed in the "What This Privacy Policy Does Not Cover" section below.
             </Text>
@@ -134,18 +134,18 @@ export const PrivacyPolicyDefinitions = () => {
             <Text style={styles.tableCell}>"you" / "your" / "me"</Text>
             <Text style={styles.tableCell}>
               You, regardless of whether you are an individual, group, or organization, and regardless
-              of whether you are using the Wikimedia Sites or our services on behalf of yourself or someone else.
+              of whether you are using the Qamar Labs Sites or our services on behalf of yourself or someone else.
             </Text>
           </View>
 
           <View style={styles.tableRow}>
             <Text style={styles.tableCell}>"this Policy" / "this Privacy Policy"</Text>
-            <Text style={styles.tableCell}>This document, entitled the "Wikimedia Foundation Privacy Policy".</Text>
+            <Text style={styles.tableCell}>This document, entitled the "Qamar Labs Privacy Policy".</Text>
           </View>
 
           <View style={styles.tableRow}>
             <Text style={styles.tableCell}>"contributions"</Text>
-            <Text style={styles.tableCell}>Content you add or changes you make to any Wikimedia Sites.</Text>
+            <Text style={styles.tableCell}>Content you add or changes you make to any Qamar Labs Sites.</Text>
           </View>
 
           <View style={styles.tableRow}>
@@ -166,18 +166,18 @@ export const PrivacyPolicyDefinitions = () => {
             <Text style={styles.tableCell}>"third party" / "third parties"</Text>
             <Text style={styles.tableCell}>
               Individuals, entities, websites, services, products, and applications that are not controlled,
-              managed, or operated by the Wikimedia Foundation. This includes other Wikimedia users and
-              independent organizations or groups who help promote the Wikimedia movement such as{" "}
-              <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Wikimedia_chapters">
-                Wikimedia chapters
+              managed, or operated by the Qamar Labs Foundation. This includes other Qamar Labs users and
+              independent organizations or groups who help promote the Qamar Labs movement such as{" "}
+              <Link href="https://qamarlabs.netlify.app/">
+                Qamar Labs chapters
               </Link>,{" "}
-              <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Wikimedia_thematic_organizations">
+              <Link href="https://qamarlabs.netlify.app/">
                 thematic organizations
               </Link>, and{" "}
-              <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Wikimedia_user_groups">
+              <Link href="https://qamarlabs.netlify.app/">
                 user groups
               </Link> as well as volunteers, employees, directors, officers,{" "}
-              <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Grants:Start/About">
+              <Link href="https://qamarlabs.netlify.app/">
                 grant recipients
               </Link>, and contractors of those organizations or groups.
             </Text>
@@ -189,7 +189,7 @@ export const PrivacyPolicyDefinitions = () => {
 
           <Text style={styles.paragraph}>
             Except as explained below, this Privacy Policy applies to our collection and handling of information
-            about you that we receive as a result of your use of any of the Wikimedia Sites. This Policy also
+            about you that we receive as a result of your use of any of the Qamar Labs Sites. This Policy also
             applies to information that we receive from our partners or other third parties. To understand more
             about what this Privacy Policy covers, please see below.
           </Text>
@@ -207,11 +207,11 @@ export const PrivacyPolicyDefinitions = () => {
           <Text style={styles.paragraph}>
             This Privacy Policy, however, does not cover some situations where we may gather or process information.
             For example, some uses may be covered by separate privacy policies (like those of the{" "}
-            <Link href="https://shop.wikimedia.org">
-              Wikimedia Shop
+            <Link href="https://qamarlabs.netlify.app/">
+              Qamar Labs Shop
             </Link>) or sites or services run by third parties (such as third-party developer projects on{" "}
-            <Link href="https://labs.wikimedia.org">
-              Wikimedia Cloud Services
+            <Link href="https://qamarlabs.netlify.app/">
+              Qamar Labs Cloud Services
             </Link>). To understand more about what this Privacy Policy does not cover, please see below.
           </Text>
 
@@ -220,7 +220,7 @@ export const PrivacyPolicyDefinitions = () => {
               style={styles.collapsibleHeader}
               onPress={toggleNonCoverage}
             >
-              <Text style={styles.collapsibleHeaderText}>More on what the Wikimedia Foundation Privacy Policy does not cover</Text>
+              <Text style={styles.collapsibleHeaderText}>More on what the Qamar Labs Foundation Privacy Policy does not cover</Text>
               <Text style={styles.collapsibleIcon}>{isNonCoverageOpen ? '−' : '+'}</Text>
             </Pressable>
             
@@ -230,58 +230,52 @@ export const PrivacyPolicyDefinitions = () => {
                   This section is part of the Privacy Policy and is meant to explain in detail which situations are not covered by our Privacy Policy.
                 </Text>
 
-                <Text style={styles.subheading}>Wikimedia Sites and Tools with alternative policies</Text>
+                <Text style={styles.subheading}>Qamar Labs Sites and Tools with alternative policies</Text>
                 <Text style={styles.paragraph}>
-                  Some Wikimedia Foundation websites or tools have alternative privacy policies or provisions that differ from this Privacy Policy. These websites include:
+                  Some Qamar Labs Foundation websites or tools have alternative privacy policies or provisions that differ from this Privacy Policy. These websites include:
                 </Text>
                 <List>
                   <ListItem>
-                    <Text style={styles.bold}>Wikipedia Store</Text> (covered by{" "}
-                    <Link href="https://store.wikimedia.org/pages/copy-of-privacy-policy">
+                    <Text style={styles.bold}>Musuah Store</Text> (covered by{" "}
+                    <Link href="https://qamarlabs.netlify.app/">
                       the shop's policy
                     </Link>);
                   </ListItem>
                   <ListItem>
-                    <Text style={styles.bold}>donate.wikimedia.org</Text>, including the donation process, such as clicking on a donation banner (covered by{" "}
-                    <Link href="/wiki/Special:MyLanguage/Policy:Donor_privacy_policy">
-                      the Donor Privacy Policy
-                    </Link>); and
-                  </ListItem>
-                  <ListItem>
                     <Text style={styles.bold}>The{" "}
-                      <Link href="https://www.mediawiki.org/wiki/Special:MyLanguage/Wikimedia_Apps/Synced_Reading_Lists">
-                        Wikipedia Reading Lists Browser Extension
+                      <Link href="https://qamarlabs.netlify.app/">
+                        Musuah Reading Lists Browser Extension
                       </Link></Text>, which is governed by a separate{" "}
-                    <Link href="/wiki/Special:MyLanguage/Policy:Wikipedia_Reading_Lists_Browser_Extension_Privacy_Policy">
+                    <Link href="https://qamarlabs.netlify.app/">
                       Privacy Policy
                     </Link>. This separate policy will also be made available where the Extension can be downloaded.
                   </ListItem>
                 </List>
                 <Text style={styles.paragraph}>
-                  If a Wikimedia Foundation website is governed by an alternative privacy policy, it will link to such policy. When a Wikimedia Foundation tool is governed by an alternative privacy policy, the page where the tool may be downloaded or enabled will include a link to that policy.
+                  If a Qamar Labs Foundation website is governed by an alternative privacy policy, it will link to such policy. When a Qamar Labs Foundation tool is governed by an alternative privacy policy, the page where the tool may be downloaded or enabled will include a link to that policy.
                 </Text>
 
                 <Text style={styles.subheading}>Community members</Text>
                 <Text style={styles.paragraph}>
-                  The Wikimedia Sites are collaborative labors of love that are constantly maintained and updated by a global community of volunteers. This global community of volunteers may sometimes have access to personal Information in order to ensure the functioning of the Wikimedia Sites.
+                  The Qamar Labs Sites are collaborative labors of love that are constantly maintained and updated by a global community of volunteers. This global community of volunteers may sometimes have access to personal Information in order to ensure the functioning of the Qamar Labs Sites.
                 </Text>
                 <List>
                   <ListItem>
                     <Text style={styles.bold}>Administrative volunteers</Text>, such as{" "}
-                    <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/CheckUser">
-                      CheckUsers
+                    <Link href="https://qamarlabs.netlify.app/">
+                      Check Users
                     </Link> or{" "}
-                    <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Stewards">
+                    <Link href="https://qamarlabs.netlify.app/">
                       Stewards
-                    </Link>. These are volunteers who enforce Wikimedia Site policies and ensure the safety of the Wikimedia Sites. When these administrators access Personal Information that is nonpublic, they are required to comply with our{" "}
-                    <Link href="/wiki/Special:MyLanguage/Policy:Access_to_nonpublic_personal_data_policy">
+                    </Link>. These are volunteers who enforce Qamar Labs Site policies and ensure the safety of the Qamar Labs Sites. When these administrators access Personal Information that is nonpublic, they are required to comply with our{" "}
+                    <Link href="https://qamarlabs.netlify.app/">
                       Access to nonpublic personal data policy
                     </Link>, as well as other, tool-specific policies.
                   </ListItem>
                   <ListItem>
                     <Text style={styles.bold}>Tool providers</Text>. We support platforms for third-party developers to experiment and develop new tools and sites, such as{" "}
-                    <Link href="https://www.mediawiki.org/wiki/Special:MyLanguage/Wikimedia_Cloud_Services">
-                      wmflabs.org
+                    <Link href="https://qamarlabs.netlify.app/">
+                      qamarlabs.netlify.app/
                     </Link>. When you use one of the tools developed by these volunteers, you may transfer information to them. When these volunteers access nonpublic information or Personal Information, they are required to comply with the terms governing the particular platform the tool is available on.
                   </ListItem>
                   <ListItem>
@@ -290,16 +284,16 @@ export const PrivacyPolicyDefinitions = () => {
                       <ListItem>posting to Foundation-hosted email lists;</ListItem>
                       <ListItem>
                         requesting support from volunteers through our{" "}
-                        <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Volunteer_Response_Team">
+                        <Link href="https://qamarlabs.netlify.app/">
                           online ticketing system
-                        </Link> (email sent to info@wikimedia.org goes to this system);
+                        </Link> (email sent to info@qamarlabs.netlify.app goes to this system);
                       </ListItem>
-                      <ListItem>emailing other users through the Wikimedia Sites (for example, by using the "Email this user" feature); and</ListItem>
+                      <ListItem>emailing other users through the Qamar Labs Sites (for example, by using the "Email this user" feature); and</ListItem>
                       <ListItem>
                         chatting on{" "}
-                        <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/IRC">
+                        <Link href="https://qamarlabs.netlify.app/">
                           IRC
-                        </Link> (such as on the #wikipedia channel).
+                        </Link> (such as on the #musuah channel).
                       </ListItem>
                     </List>
                   </ListItem>
@@ -307,22 +301,22 @@ export const PrivacyPolicyDefinitions = () => {
 
                 <Text style={styles.subheading}>Third parties</Text>
                 <Text style={styles.paragraph}>
-                  This Privacy Policy only covers the way the Wikimedia Foundation collects, uses and discloses Personal Information and does not address the practices of third parties. For example, this Privacy Policy does not address the practices of:
+                  This Privacy Policy only covers the way the Qamar Labs Foundation collects, uses and discloses Personal Information and does not address the practices of third parties. For example, this Privacy Policy does not address the practices of:
                 </Text>
                 <List>
                   <ListItem>
-                    <Text style={styles.bold}>Websites run by other organizations</Text>, like websites linked to from the "References" sections of Wikipedia, or run by Wikimedia chapters or other{" "}
-                    <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Wikimedia_movement_affiliates">
+                    <Text style={styles.bold}>Websites run by other organizations</Text>, like websites linked to from the "References" sections of Musuah, or run by Qamar Labs chapters or other{" "}
+                    <Link href="https://qamarlabs.netlify.app/">
                       movement organizations
-                    </Link>. These organizations may receive information from you if you visit their websites after using one of the Wikimedia Sites. They are governed by their own privacy policies.
+                    </Link>. These organizations may receive information from you if you visit their websites after using one of the Qamar Labs Sites. They are governed by their own privacy policies.
                   </ListItem>
                   <ListItem>
-                    <Text style={styles.bold}>Mobile applications provided by other organizations or individuals</Text>. These organizations or individuals may receive information from you if you use those applications to access the Wikimedia Sites or Wikimedia Site content. They are governed by their own privacy policies.
+                    <Text style={styles.bold}>Mobile applications provided by other organizations or individuals</Text>. These organizations or individuals may receive information from you if you use those applications to access the Qamar Labs Sites or Qamar Labs Site content. They are governed by their own privacy policies.
                   </ListItem>
                 </List>
 
                 <Text style={styles.paragraph}>
-                  Sometimes, volunteers may place a data-collecting tool, such as a script, gadget, tracking pixel, or share button, on a Wikimedia Site without our knowledge. This Policy does not cover how third parties handle the information they receive as a result of such a tool. If you come across such a third-party tool, and you believe it violates this Policy, you can remove the tool yourself, or report it to privacy@wikimedia.org so we can investigate.
+                  Sometimes, volunteers may place a data-collecting tool, such as a script, gadget, tracking pixel, or share button, on a Qamar Labs Site without our knowledge. This Policy does not cover how third parties handle the information they receive as a result of such a tool. If you come across such a third-party tool, and you believe it violates this Policy, you can remove the tool yourself, or report it to privacy@qamarlabs.netlify.app so we can investigate.
                 </Text>
               </View>
             </Collapsible>
@@ -330,8 +324,8 @@ export const PrivacyPolicyDefinitions = () => {
 
           <Text style={styles.paragraph}>
             Where community policies govern information, such as the{" "}
-            <Link href="https://meta.wikimedia.org/wiki/Special:MyLanguage/CheckUser_policy">
-              CheckUser policy
+            <Link href="https://qamarlabs.netlify.app/">
+              Check User policy
             </Link>, the relevant community may add to the rules and obligations set out in this Policy. However, they are not permitted to create new exceptions or otherwise reduce the protections offered by this Policy.
           </Text>
 
@@ -339,7 +333,7 @@ export const PrivacyPolicyDefinitions = () => {
             <Pressable onPress={scrollToTop} style={styles.backToTopButton}>
               <Text style={styles.backToTopText}>Back to top</Text>
               <Image
-                source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/WWC_arrow_up.png' }}
+                source={{ uri: 'https://qamarlabs.netlify.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75' }}
                 style={styles.arrowIcon}
               />
             </Pressable>

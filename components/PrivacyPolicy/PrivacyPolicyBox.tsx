@@ -44,17 +44,17 @@ export function PrivacyPolicyBox() {
 
           <View style={styles.imageContainer}>
             <Image
-              source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/120px-Wikimedia-logo_black.svg.png' }}
+              source={{ uri: 'https://qamarlabs.netlify.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75' }}
               style={styles.image}
-              accessibilityLabel="Wikimedia Logo"
+              accessibilityLabel="Qamar Labs Logo"
             />
           </View>
 
           <Text style={styles.centeredText}>
             This is a{' '}
-            {renderLink('summary', '/wiki/Special:MyLanguage/Policy:Privacy_policy/Summary')}{' '}
+            {renderLink('summary', '/')}{' '}
             of the Privacy Policy. To read the full terms, scroll down or{' '}
-            {renderLink('click here', '/wiki/Special:MyLanguage/Policy:Privacy_policy#introduction')}.
+            {renderLink('click here', '/')}.
           </Text>
 
           <Text style={styles.disclaimer}>
@@ -80,41 +80,41 @@ export function PrivacyPolicyBox() {
               {renderListItem(
                 <>
                   Register for an account{' '}
-                  {renderLink('without providing', '/wiki/Special:MyLanguage/Policy:Privacy_policy#your-account-info')}{' '}
+                  {renderLink('without providing', '/')}{' '}
                   an email address or real name.
                 </>
               )}
             </View>
 
             <Text style={styles.boldText}>
-              Because we want to understand how Wikimedia Sites are used so we can make them better for
+              Because we want to understand how Qamar Labs Sites are used so we can make them better for
               you, we collect some information when you:
             </Text>
             <View style={styles.list}>
               {renderListItem(
                 <>
                   Make{' '}
-                  {renderLink('public contributions', '/wiki/Special:MyLanguage/Policy:Privacy_policy#your-public-contribs')}.
+                  {renderLink('public contributions', '/')}.
                 </>
               )}
               {renderListItem(
                 <>
-                  {renderLink('Register an account', '/wiki/Special:MyLanguage/Policy:Privacy_policy#your-account-info')}{' '}
+                  {renderLink('Register an account', '/')}{' '}
                   or update your user page.
                 </>
               )}
               {renderListItem(
                 <>
                   {renderLink('Use', '/wiki/Special:MyLanguage/Policy:Privacy_policy#your-use-of-wm-sites')}{' '}
-                  the Wikimedia Sites.
+                  the Qamar Labs Sites.
                 </>
               )}
               {renderListItem(
                 <>
                   Send us{' '}
-                  {renderLink('emails', '/wiki/Special:MyLanguage/Policy:Privacy_policy#emails')}{' '}
+                  {renderLink('emails', '/')}{' '}
                   or participate in a{' '}
-                  {renderLink('survey or give feedback', '/wiki/Special:MyLanguage/Policy:Privacy_policy#surveys-feedback')}.
+                  {renderLink('survey or give feedback', '/')}.
                 </>
               )}
             </View>
@@ -124,38 +124,38 @@ export function PrivacyPolicyBox() {
               {renderListItem(
                 <>
                   Describing how your information may be used or{' '}
-                  {renderLink('shared', '/wiki/Special:MyLanguage/Policy:Privacy_policy#when-we-may-share')}{' '}
+                  {renderLink('shared', '/')}{' '}
                   in this Privacy Policy.
                 </>
               )}
               {renderListItem(
                 <>
                   Using reasonable measures to keep your information{' '}
-                  {renderLink('secure', '/wiki/Special:MyLanguage/Policy:Privacy_policy#protection-means')}.
+                  {renderLink('secure', '/')}.
                 </>
               )}
               {renderListItem(
                 <>
                   Never{' '}
-                  {renderLink('selling', '/wiki/Special:MyLanguage/Policy:Privacy_policy#donotsell')}{' '}
+                  {renderLink('selling', '/')}{' '}
                   your information or sharing it with third parties for marketing purposes.
                 </>
               )}
               {renderListItem(
                 <>
                   Only{' '}
-                  {renderLink('sharing', '/wiki/Special:MyLanguage/Policy:Privacy_policy#when-we-may-share')}{' '}
+                  {renderLink('sharing', '/')}{' '}
                   your information in limited circumstances, such as to{' '}
-                  {renderLink('improve the Wikimedia Sites', '/wiki/Special:MyLanguage/Policy:Privacy_policy#share-to-experiment')}, to{' '}
-                  {renderLink('comply with the law', '/wiki/Special:MyLanguage/Policy:Privacy_policy#share-legal-reasons')}, or to{' '}
-                  {renderLink('protect you and others', '/wiki/Special:MyLanguage/Policy:Privacy_policy#share-to-protect-people')}.
+                  {renderLink('improve the Qamar Labs Sites', '/')}, to{' '}
+                  {renderLink('comply with the law', '/')}, or to{' '}
+                  {renderLink('protect you and others', '/')}.
                 </>
               )}
               {renderListItem(
                 <>
-                  {renderLink('Retaining your data', '/wiki/Special:MyLanguage/Policy:Privacy_policy#protection-duration')}{' '}
+                  {renderLink('Retaining your data', '/')}{' '}
                   for the shortest possible time that is consistent with maintaining, understanding, and
-                  improving the Wikimedia Sites, and our obligations under applicable law.
+                  improving the Qamar Labs Sites, and our obligations under applicable law.
                 </>
               )}
             </View>
@@ -164,13 +164,13 @@ export function PrivacyPolicyBox() {
             <View style={styles.list}>
               {renderListItem(
                 <>
-                  Any content you add or any change that you make to a Wikimedia Site will be{' '}
+                  Any content you add or any change that you make to a Qamar Labs Site will be{' '}
                   {renderLink('publicly and permanently available', '/wiki/Special:MyLanguage/Policy:Privacy_policy#your-public-contribs')}.
                 </>
               )}
               {renderListItem(
                 <>
-                  If you add content or make a change to a Wikimedia Site{' '}
+                  If you add content or make a change to a Qamar Labs Site{' '}
                   {renderLink('without logging in', '/wiki/Special:MyLanguage/Policy:Privacy_policy#noaccount')}, that content or change will be publicly and permanently attributed to the IP
                   address used at the time rather than a username.
                 </>
@@ -178,22 +178,22 @@ export function PrivacyPolicyBox() {
               {renderListItem(
                 <>
                   Our community of volunteer editors and contributors is a self-policing body. Certain
-                  administrators of the Wikimedia Sites, who are chosen by the community, use tools that
+                  administrators of the Qamar Labs Sites, who are chosen by the community, use tools that
                   grant them limited access to nonpublic information about recent contributions so they may
-                  protect the Wikimedia Sites and enforce policies.
+                  protect the Qamar Labs Sites and enforce policies.
                 </>
               )}
               {renderListItem(
                 <>
                   This Privacy Policy{' '}
                   {renderLink('does not apply', '/wiki/Special:MyLanguage/Policy:Privacy_policy#coverage')}{' '}
-                  to all sites and services run by the Wikimedia Foundation, such as sites or services that
+                  to all sites and services run by the Qamar Labs Foundation, such as sites or services that
                   have their own privacy policy (like the{' '}
-                  {renderLink('Wikimedia Shop', 'https://shop.wikimedia.org')}) or sites or services run by third parties (like third-party developer projects
+                  {renderLink('Qamar Labs Shop', 'https://qamarlabs.netlify.app/')}) or sites or services run by third parties (like third-party developer projects
                   on{' '}
                   {renderLink(
-                    'Wikimedia Cloud Services',
-                    'https://www.mediawiki.org/wiki/Special:MyLanguage/Wikimedia_Cloud_Services'
+                    'Qamar Labs Cloud Services',
+                    'https://qamarlabs.netlify.app/'
                   )}).
                 </>
               )}
@@ -206,8 +206,8 @@ export function PrivacyPolicyBox() {
               )}
               {renderListItem(
                 <>
-                  For the protection of the Wikimedia Foundation and other users, if you do not agree with
-                  this Privacy Policy, you may not use the Wikimedia Sites.
+                  For the protection of the Qamar Labs Foundation and other users, if you do not agree with
+                  this Privacy Policy, you may not use the Qamar Labs Sites.
                 </>
               )}
             </View>

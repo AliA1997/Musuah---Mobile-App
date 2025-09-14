@@ -111,7 +111,7 @@ export const PrivacyPolicySharing = () => {
       content: (
         <>
           <Text style={styles.paragraph}>
-            We use third-party service providers to help run or improve the Wikimedia Sites. We put
+            We use third-party service providers to help run or improve the Qamar Labs Sites. We put
             requirements in place to ensure these service providers treat your Personal Information
             consistently with this Policy.
           </Text>
@@ -126,11 +126,11 @@ export const PrivacyPolicySharing = () => {
         <>
           <Text style={styles.paragraph}>
             We give some developers limited access to systems that contain your Personal Information
-            to help improve the Wikimedia Sites.
+            to help improve the Qamar Labs Sites.
           </Text>
           <Text style={styles.paragraph}>
             Similarly, we share non-Personal Information with researchers who wish to study the
-            Wikimedia Sites.
+            Qamar Labs Sites.
           </Text>
         </>
       ),
@@ -141,7 +141,7 @@ export const PrivacyPolicySharing = () => {
       level: 4,
       content: (
         <Text style={styles.paragraph}>
-          Any information you post publicly on the Wikimedia Sites is just that – public. Please think
+          Any information you post publicly on the Qamar Labs Sites is just that – public. Please think
           carefully about your desired level of privacy before you disclose Personal Information.
         </Text>
       ),
