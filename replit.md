@@ -32,7 +32,7 @@ A React Native / Expo app for a free Islamic encyclopedia with web support. Buil
 - Port: 5000 (set via `RCT_METRO_PORT=5000` env var)
 - Web platform uses `components/nativewindui/Text.web.tsx` instead of `react-native-uitextview` (native-only module incompatible with web)
 
-## Deployment
-- Target: Static site
-- Build command: `RCT_METRO_PORT=5000 npx expo export --platform web`
-- Output directory: `dist/`
+## Android Build (Google Play Store)
+- Package Name: `com.musuah.app`
+- Build command: `npx eas build --platform android` (Requires Expo account)
+- Local build: `npx expo run:android`
